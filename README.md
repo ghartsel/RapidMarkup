@@ -17,8 +17,8 @@ Motivation for this tool:
 ## Usage
 
 ``` python
-    $ python3 convstyle.py <fileName>
-    $ python3 xslt.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
+    python3 convstyle.py <fileName>
+    python3 xslt.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
 ```
 
 Docxform currently supported markup formats are ReStructuredText and Markdown (GitHub flavor). You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the supported styles.
@@ -31,8 +31,8 @@ Docxform currently supported markup formats are ReStructuredText and Markdown (G
 Example:
 
 ``` python
-    $ python3 convstyle.py sample.fodt > conv.fodt
-    $ python3 xslt.py -fn conv.fodt -m MD > sample.md
+    python3 convstyle.py sample.fodt > conv.fodt
+    python3 xslt.py -fn conv.fodt -m MD > sample.md
 ```
 
 ### Convert Libreoffice to reStructuredText
@@ -43,8 +43,8 @@ Example:
 Example:
 
 ``` python
-    $ python3 convstyle.py sample.fodt > conv.fodt
-    $ python3 xslt.py -fn conv.fodt -m RST > sample.rst
+    python3 convstyle.py sample.fodt > conv.fodt
+    python3 xslt.py -fn conv.fodt -m RST > sample.rst
 ```
 
 ## Notes
