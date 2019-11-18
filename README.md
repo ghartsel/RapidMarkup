@@ -27,7 +27,7 @@ Docxform currently supported markup formats are ReStructuredText and Markdown (G
 
     $ python3 xslt.py conv.fodt MD > <original>.md
 
-###Convert Libreoffice to reStructuredText
+### Convert Libreoffice to reStructuredText
 
 1. Create LibreOffice .fodt source
 2. Convert source styles, then transform to .rst file:
