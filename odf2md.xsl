@@ -60,10 +60,12 @@
 <!-- Headers -->
 	<!-- Note: By convention, there can only be one "header1" level per file, and it is the 1st line of the file -->
 	<xsl:template match="//text:h[@text:style-name='header1']">
+		<xsl:message>TEST TEST TEST</xsl:message>
 		<xsl:call-template name="hdrlvl1"/>
 	</xsl:template>
 	
 	<xsl:template match="//text:p[@text:style-name='header1']">
+		<xsl:message>TEST TEST TEST</xsl:message>
 		<xsl:call-template name="hdrlvl1"/>
 	</xsl:template>
 	
@@ -93,7 +95,7 @@
 
 <!-- Paragraphs -->
 	<xsl:template match="//text:p[@text:style-name='paragraph']">
-                <xsl:call-template name="contentblock"/>
+        <xsl:call-template name="contentblock"/>
 	</xsl:template>
 	
 	<xsl:template match="//text:p[@text:style-name='literalBlockFirst']">

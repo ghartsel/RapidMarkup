@@ -6,6 +6,7 @@ Motivation for this tool:
 
 - The belief that ASCII-based editors and markup are inadequate for serious technical documentation (documentation is not email), and that content cannot be entirely decoupled from presentation (form does follow function).
 - This mechanism permits semantic highlighting independent of the rendered format, which a strength ReStructuredText already holds over Markdown.
+- Single-source documentation is supported at a high level. LibreOffice documents can be formatted for high usability and are easily published in native or PDF format for document review or publishing. Markup combined with CSS gives you the desired online presentation from the same source document.
 - WYSIWYG authoring tools, when simply configured and not burdened with excessive features, is a more productive authoring environment than simple ASCII text editors. The time saved and enhanced quality of using LibreOffice far outweighs the convenience of never having to leave the keyboard.
 - Under-the-hood LibreOffice is XML and XML is a natural representation for documentation, which tends to have a hierarchical structure.
 
@@ -55,8 +56,10 @@ The current version of docxform supports styles defined as Custom Styles. These 
 
 ## TODO:
 
-- Define additional custom styles to support additional semantics. This involves:
+- Define additional semantic styles to support typical hardware and software documentation requirements. This involves:
     - Define a new Custom Style in LibreOffice.
     - Add the XSLT support for the new styles in the .xsl files.
 - Combine the two-step conversion process into one program.
+- Change style mapping, convertStyle.xsl, to variable style names (ex: Pxx vs. P10) with near unlimited support
+- Add support for character style mapping (ex: T3)
 - Add XSLT support for other markup formats, such as other Markdown flavors and wikis.
