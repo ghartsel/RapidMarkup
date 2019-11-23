@@ -18,48 +18,44 @@ Motivation for this tool:
 ## Usage
 
 ``` python
-    python3 convstyle.py <fileName>
     python3 xslt.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
 ```
 
-Docxform currently supported markup formats are ReStructuredText and Markdown (GitHub flavor). You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the supported styles.
+Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 ### Convert Libreoffice to Markdown
 
 1. Create LibreOffice .fodt source
-2. Convert source styles, then transform to .md file:
+2. Convert to .md file:
 
 Example:
 
 ``` python
-    python3 convstyle.py sample.fodt > conv.fodt
-    python3 xslt.py -fn conv.fodt -m MD > sample.md
+    python3 xslt.py -fn sample.fodt -m MD > sample.md
 ```
 
 ### Convert Libreoffice to reStructuredText
 
 1. Create LibreOffice .fodt source
-2. Convert source styles, then transform to .rst file:
+2. Convert to .rst file:
 
 Example:
 
 ``` python
-    python3 convstyle.py sample.fodt > conv.fodt
-    python3 xslt.py -fn conv.fodt -m RST > sample.rst
+    python3 xslt.py -fn sample.fodt -m RST > sample.rst
 ```
 
 ## Notes
 
 If you are using a docs-as-code documentation methodology where your documentation source is version controlled like the software source, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way as any other ASCII source.
 
-The current version of docxform supports styles defined as Custom Styles. These styles support the semantics of technical software documentation.
+The current version of docxform supports styles defined as Custom Styles. These styles support technical software documentation semantic elements.
 
 ## TODO:
 
-- Define additional semantic styles to support typical hardware and software documentation requirements. This involves:
+- Define additional semantic styles to support typical hardware and software documentation requirements, which might be called *specialization* in the DITA world. This involves:
     - Define a new Custom Style in LibreOffice.
     - Add the XSLT support for the new styles in the .xsl files.
-- Combine the two-step conversion process into one program.
-- Change style mapping, convertStyle.xsl, to variable style names (ex: Pxx vs. P10) with near unlimited support
-- Add support for character style mapping (ex: T3)
+- Handle unmatched elements.
+- Add support for character style mapping (ex: T3).
 - Add XSLT support for other markup formats, such as other Markdown flavors and wikis.

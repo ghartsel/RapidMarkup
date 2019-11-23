@@ -16,6 +16,18 @@ if __name__ == '__main__':
     parser.add_argument('-m','--markup', choices=['md', 'MD', 'rst', 'RST'], default='MD', help='Markup language: Markdown (default)|reStructuredText', required=False)
     args = parser.parse_args()
 
+    # convert source file expanded styles to base styles
+    xslt_doc = etree.parse("convertStyle.xsl")
+    xslt_transformer = etree.XSLT(xslt_doc)
+     
+    source_doc = etree.parse(args.filename)
+    intDoc = xslt_transformer(source_doc)
+    content = etree.tostring(intDoc)
+
+#    print (intDoc)
+
+    # convert intermediate file to markup format
+
     if args.markup.lower() == 'md':
         xslt_doc = etree.parse("odf2md.xsl")
     else:
@@ -23,7 +35,7 @@ if __name__ == '__main__':
 
     xslt_transformer = etree.XSLT(xslt_doc)
      
-    source_doc = etree.parse(args.filename)
+    source_doc = etree.fromstring(content)
     output_doc = xslt_transformer(source_doc)
      
     print (str(output_doc))

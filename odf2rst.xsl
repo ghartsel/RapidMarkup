@@ -51,33 +51,17 @@
  
 <!-- Headers -->
 	<!-- Note: By convention, there can only be one "header1" level per file, and it is the 1st line of the file -->
-	<xsl:template match="//text:h[@text:style-name='header1']">
+	<xsl:template match="//text:h[@text:style-name='header1']|//text:p[@text:style-name='header1']">
 		<xsl:call-template name="hdrlvl1"/>
-	</xsl:template>
-	
-	<xsl:template match="//text:p[@text:style-name='header1']">
-		<xsl:call-template name="hdrlvl1"/>
-	</xsl:template>
-	
-	<xsl:template match="//text:h[@text:style-name='header2']">
-                <xsl:if test="string-length(node()) > 0"> 
-                        <xsl:call-template name="hdrlvl2"/>
-                </xsl:if>
-	</xsl:template>
-	
-	<xsl:template match="//text:p[@text:style-name='header2']">
-                <xsl:if test="string-length(node()) > 0"> 
-                        <xsl:call-template name="hdrlvl2"/>
-                </xsl:if>
-	</xsl:template>
-	
-	<xsl:template match="//text:h[@text:style-name='header3']">
-                <xsl:if test="string-length(node()) > 0"> 
-                        <xsl:call-template name="hdrlvl3"/>
-                </xsl:if>
 	</xsl:template>
 
-	<xsl:template match="//text:p[@text:style-name='header3']">
+	<xsl:template match="//text:h[@text:style-name='header2']|//text:p[@text:style-name='header2']">
+                <xsl:if test="string-length(node()) > 0"> 
+                        <xsl:call-template name="hdrlvl2"/>
+                </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="//text:h[@text:style-name='header3']|//text:p[@text:style-name='header3']">
                 <xsl:if test="string-length(node()) > 0"> 
                         <xsl:call-template name="hdrlvl3"/>
                 </xsl:if>
@@ -268,6 +252,12 @@
 	</xsl:template>
 -->
 
+<!-- handle unmatched element styles 
+    <xsl:template match="/*" priority="0">
+	    <xsl:text>Unmatched style element. Add to styles (F11)</xsl:text>
+	    <xsl:value-of select="current()" />
+    </xsl:template>
+-->
 <!-- subroutines -->
 	<xsl:template name="hdrlvl1">
 		<xsl:value-of select="$new_line" />
