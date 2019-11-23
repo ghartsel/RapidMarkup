@@ -49,7 +49,7 @@ Example:
 
 If you are using a docs-as-code documentation methodology where your documentation source is version controlled like the software source, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way as any other ASCII source.
 
-The current version of docxform supports styles defined as Custom Styles. These styles support technical software documentation semantic elements.
+The current version of docxform supports styles defined as LibreOffice **Custom Styles**. These styles support technical software documentation semantic elements.
 
 ## TODO:
 
