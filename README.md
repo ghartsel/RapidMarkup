@@ -21,6 +21,17 @@ Motivation for this tool:
     python3 xslt.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
 ```
 
+Options:
+
+-h [HELP] This *Usage*.
+
+
+-fn [FILENAME] Source file name.
+
+-m [MARKUP] Output markup format; md/MD = Markdown, rst/RST = ReStructuredText
+
+Output is to STDIO.
+
 Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 ### Convert Libreoffice to Markdown
