@@ -24,7 +24,7 @@ Motivation for this tool:
 Options:
 
 ``` bash
-    -h [HELP] This *Usage*.
+    -h [HELP] This Usage.
 
 
     -fn [FILENAME] Source file name.
