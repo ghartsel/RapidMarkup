@@ -1,6 +1,6 @@
 # docxform
 
-Docxform is a Python3 technical documentation authoring tool. It lets you use LibreOffice as a WYSIWYG editor to create markup source files.
+Use the docxform documentation tool to transform Open Document Format (ODF) files to commonly used markup source files. This lets you use LibreOffice as a WYSIWYG editor to generate ReStructuredText and Markdown content.
 
 Motivation for this tool:
 
@@ -58,4 +58,4 @@ The current version of docxform supports styles defined as LibreOffice **Custom 
     - Add the XSLT support for the new styles in the .xsl files.
 - Handle unmatched elements.
 - Add support for character style mapping (ex: T3).
-- Add XSLT support for other markup formats, such as other Markdown flavors and wikis.
+- Add XSLT support for other markup formats, such as AsciiDoc, other Markdown flavors, and the various wiki formats.
