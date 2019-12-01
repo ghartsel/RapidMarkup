@@ -59,3 +59,4 @@ The current version of docxform supports styles defined as LibreOffice **Custom 
 - Handle unmatched elements.
 - Add support for character style mapping (ex: T3).
 - Add XSLT support for other markup formats, such as AsciiDoc, other Markdown flavors, and the various wiki formats.
+- Support default Google Docs styles.
