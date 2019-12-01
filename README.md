@@ -23,12 +23,12 @@ Motivation for this tool:
 
 Options:
 
--h [HELP] This *Usage*.
+&nbsp&nbsp&nbsp&nbsp-h [HELP] This *Usage*.
 
 
--fn [FILENAME] Source file name.
+&nbsp&nbsp&nbsp&nbsp-fn [FILENAME] Source file name.
 
--m [MARKUP] Output markup format; md/MD = Markdown, rst/RST = ReStructuredText
+&nbsp&nbsp&nbsp&nbsp-m [MARKUP] Output markup format; md/MD = Markdown, rst/RST = ReStructuredText
 
 Output is to STDIO.
 
