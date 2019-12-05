@@ -10,11 +10,11 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
 
 ## Motivation
 
-- The belief that ASCII-based editors and markup are inadequate for serious technical documentation (documentation is *not* email), and that content cannot be entirely decoupled from presentation (form *does* follow function).
+- The belief that ASCII-based editors and markup are inadequate for serious technical documentation (documentation is *not* email) and that content cannot be entirely decoupled from presentation (form *does* follow function).
 - This mechanism permits semantic highlighting independent of the rendered format, which a strength ReStructuredText already holds over Markdown.
 - Single-source documentation is supported at a high level. LibreOffice documents can be formatted for high usability and are easily published in native or PDF offline formats for document review or publishing. Markup processors combined with CSS give you the online presentation format from the same source document.
 - WYSIWYG authoring tools, when simply configured and not burdened with excessive features, provide a more productive authoring environment than simple ASCII text editors. The time saved and enhanced quality of using LibreOffice far outweighs the convenience of "never having to leave the keyboard."
-- Under-the-hood LibreOffice is XML and XML is a natural representation for documentation, which typically has an hierarchical structure.
+- Under-the-hood LibreOffice is XML and XML is a natural representation for documentation, which typically has a hierarchical structure.
 
 ## Prerequisites
 
@@ -28,6 +28,21 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
 ```
 
 RapidMarkup currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
+
+Options:
+
+``` bash
+    -h [HELP] This Usage.
+
+
+    -fn [FILENAME] Source file name.
+
+    -m [MARKUP] Output markup format; md/MD = Markdown, rst/RST = ReStructuredText
+```
+
+Output is to STDIO.
+
+Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 ### Convert Libreoffice to Markdown
 
@@ -64,4 +79,5 @@ The current version of RapidMarkup supports styles defined as LibreOffice **Cust
     - Add the XSLT support for the new styles in the .xsl files.
 - Handle unmatched elements.
 - Add support for character style mapping (ex: T3).
-- Add XSLT support for other markup formats, such as other Markdown flavors and wikis.
+- Add XSLT support for other markup formats, such as AsciiDoc, other Markdown flavors, and the various wiki formats.
+- Support default Google Docs styles.
