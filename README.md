@@ -5,7 +5,7 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
 ## Features
 
 - WYSIWYG authoring
-- one-click semantic highlighting
+- One-click semantic highlighting
 - Supports the docs-as-code content management paradigm
 
 ## Motivation
