@@ -14,7 +14,7 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
 - This mechanism permits semantic highlighting independent of the rendered format, which a strength ReStructuredText already holds over Markdown.
 - Single-source documentation is supported at a high level. LibreOffice documents can be formatted for high usability and are easily published in native or PDF offline formats for document review or publishing. Markup processors combined with CSS give you the online presentation format from the same source document.
 - WYSIWYG authoring tools, when simply configured and not burdened with excessive features, provide a more productive authoring environment than simple ASCII text editors. The time saved and enhanced quality of using LibreOffice far outweighs the convenience of "never having to leave the keyboard."
-- Under-the-hood LibreOffice is XML and XML is a natural representation for documentation, which typically has a hierarchical structure.
+- Under-the-hood LibreOffice is XML, which is a natural representation for the hierarchical structure of technical documentation.
 
 ## Prerequisites
 
