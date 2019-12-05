@@ -1,8 +1,14 @@
-# docxform
+# RapidMarkup
 
-Docxform is a Python3 technical documentation authoring tool. It lets you use LibreOffice as a WYSIWYG editor to create markup source files.
+RapidMarkup is a Python3 technical documentation authoring tool that converts ODF content to popular markup formats. This lets you use LibreOffice as a WYSIWYG editor to create content suitable for docs-as-code content management.
 
-Motivation for this tool:
+## Features
+
+- WYSIWYG authoring
+- one-click semantic highlighting
+- Supports the docs-as-code content management paradigm
+
+## Motivation
 
 - The belief that ASCII-based editors and markup are inadequate for serious technical documentation (documentation is *not* email), and that content cannot be entirely decoupled from presentation (form *does* follow function).
 - This mechanism permits semantic highlighting independent of the rendered format, which a strength ReStructuredText already holds over Markdown.
@@ -18,38 +24,38 @@ Motivation for this tool:
 ## Usage
 
 ``` python
-    python3 xslt.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
+    python3 rapidmu.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
 ```
 
-Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
+RapidMarkup currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 ### Convert Libreoffice to Markdown
 
-1. Create LibreOffice .fodt source
-2. Convert to .md file:
+1. Create source file using LibreOffice.
+2. Convert .fodt source to .md format:
 
-Example:
+    Example:
 
 ``` python
-    python3 xslt.py -fn sample.fodt -m MD > sample.md
+    python3 rapidmu.py -fn sample.fodt -m MD > sample.md
 ```
 
 ### Convert Libreoffice to reStructuredText
 
-1. Create LibreOffice .fodt source
-2. Convert to .rst file:
+1. Create source file using LibreOffice.
+2. Convert .fodt source to .rst format:
 
-Example:
+    Example:
 
 ``` python
-    python3 xslt.py -fn sample.fodt -m RST > sample.rst
+    python3 rapidmu.py -fn sample.fodt -m RST > sample.rst
 ```
 
 ## Notes
 
 If you are using a docs-as-code documentation methodology where your documentation source is version controlled like the software source, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way as any other ASCII source.
 
-The current version of docxform supports styles defined as LibreOffice **Custom Styles**. These styles support technical software documentation semantic elements.
+The current version of RapidMarkup supports styles defined as LibreOffice **Custom Styles**. These styles support technical software documentation semantic elements.
 
 ## TODO:
 
