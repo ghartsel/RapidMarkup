@@ -19,6 +19,7 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
 ## Prerequisites
 
 - Python 3
+- `pip3 install -r requirements.txt`
 - Free and open source LibreOffice (https://www.libreoffice.org/). Also, distributed with Ubuntu.
 
 ## Usage
