@@ -40,6 +40,10 @@ Output is to STDIO.
 
 Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. Run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
+If you're using a docs-as-code documentation methodology that uses GitHub for version control, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way as any other ASCII source.
+
+The current version of RapidMarkup supports styles defined as LibreOffice **Custom Styles**. These styles support technical software documentation semantic elements.
+
 ### Convert Libreoffice to Markdown
 
 1. Create source file using LibreOffice.
@@ -61,12 +65,6 @@ Docxform currently generates ReStructuredText and Markdown (GitHub flavor) docum
 ``` python
     python3 rapidmu.py -fn sample.fodt -m RST > sample.rst
 ```
-
-## Notes
-
-If you are using a docs-as-code documentation methodology where your documentation source is version controlled like the software source, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way as any other ASCII source.
-
-The current version of RapidMarkup supports styles defined as LibreOffice **Custom Styles**. These styles support technical software documentation semantic elements.
 
 ## TODO:
 
