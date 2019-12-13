@@ -1,4 +1,9 @@
-# RapidMarkup
+
+# Welcome to RapidMarkup
+
+<p align="center">
+    <img src="static/rapid.jpg" alt="rapid"/>
+</p>
 
 RapidMarkup is a Python3 technical documentation authoring tool that converts ODF content to popular markup formats. This lets you use LibreOffice as a WYSIWYG editor to create content suitable for docs-as-code content management.
 
