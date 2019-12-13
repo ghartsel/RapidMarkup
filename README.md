@@ -38,7 +38,7 @@ Options:
 
 Output is to STDIO.
 
-Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
+Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. Run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 ### Convert Libreoffice to Markdown
 
