@@ -31,7 +31,6 @@ Options:
 ``` bash
     -h [HELP] This Usage.
 
-
     -fn [FILENAME] Source file name.
 
     -m [MARKUP] Output markup format; md/MD = Markdown, rst/RST = ReStructuredText
