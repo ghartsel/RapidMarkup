@@ -24,7 +24,7 @@ RapidMarkup is a Python3 technical documentation authoring tool that converts OD
     python3 rapidmu.py [-h] -fn FILENAME [-m {md,MD,rst,RST}]
 ```
 
-RapidMarkup currently generates ReStructuredText and Markdown (GitHub flavor) document formats. You can run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
+RapidMarkup currently generates ReStructuredText and Markdown (GitHub flavor) document formats. Run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 Options:
 
