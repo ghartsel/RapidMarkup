@@ -1,5 +1,5 @@
 
-# Welcome to RapidMarkup
+# Welcome to *RapidMarkup*
 
 <p align="center">
     <img src="static/rapid.jpg" alt="rapid"/>
