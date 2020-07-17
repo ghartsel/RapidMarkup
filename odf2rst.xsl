@@ -48,7 +48,12 @@
 <xsl:variable name="literalDoubleQuote" select="'&#x60;&#x60;'"/>
 <xsl:variable name="hyperlinkBegin" select="'&#x20;&#x3C;'"/>
 <xsl:variable name="hyperlinkEnd" select="'&#x3E;&#x60;&#x5F;'"/>
- 
+<xsl:variable name="bar" select="'&#x7C;'"/>
+<xsl:variable name="plus" select="'&#x2B;'"/>
+<xsl:variable name="dash" select="'&#x2D;'"/>
+<xsl:variable name="multidash" select="'&#x2D;&#x2D;&#x2D;&#x2D;&#x2D;&#x2D;&#x2D;&#x2D;'"/>
+<xsl:variable name="multieq" select="'&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;'"/>
+
 <!-- Headers -->
 	<!-- Note: By convention, there can only be one "header1" level per file, and it is the 1st line of the file -->
 	<xsl:template match="//text:h[@text:style-name='header1']|//text:p[@text:style-name='header1']">
@@ -167,15 +172,32 @@
 
 <!-- Table -->
 	<xsl:template match="//table:table">
+	    <xsl:value-of select="$new_line"/><xsl:value-of select="$plus" /><xsl:value-of select="$multidash" />
+		<xsl:apply-templates/>
 	</xsl:template>
 	
-	<xsl:template match="//table:table-row">
+	<xsl:template match="//table:table/table:table-header-rows/table:table-row">
+		<xsl:call-template name="rowhandler"/>
 	</xsl:template>
 	
-	<xsl:template match="//text:p[@text:style-name='Table_20_Heading']">
+	<xsl:template match="//table:table/table:table-row">
+		<xsl:call-template name="rowhandler"/>
+	</xsl:template>
+
+	<xsl:template match="//table:table/table:table-header-rows/table:table-row/table:table-cell/text:p[@text:style-name='Table_20_Heading']">
+		<xsl:call-template name="cellhandler"/>
 	</xsl:template>
 	
-	<xsl:template match="//text:p[@text:style-name='Table_20_Contents']">
+	<xsl:template match="//table:table/table:table-header-rows/table:table-row/table:table-cell/text:p[@text:style-name='Table_20_Contents']">
+		<xsl:call-template name="cellhandler"/>
+	</xsl:template>
+
+	<xsl:template match="//table:table/table:table-row/table:table-cell/text:p[@text:style-name='Table_20_Heading']">
+		<xsl:call-template name="cellhandler"/>
+	</xsl:template>
+	
+	<xsl:template match="//table:table/table:table-row/table:table-cell/text:p[@text:style-name='Table_20_Contents']">
+		<xsl:call-template name="cellhandler"/>
 	</xsl:template>
 
 <!-- Image -->
@@ -282,6 +304,33 @@
 	<xsl:template name="contentblock">
 		<xsl:value-of select="$new_line" /><xsl:value-of select="$new_line" />
 		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template name="rowhandler">
+	    <xsl:value-of select="$new_line"/><xsl:value-of select="$bar"/>
+		<xsl:apply-templates/>
+		<xsl:value-of select="$new_line"/>
+
+		<xsl:choose>
+		    <xsl:when test="table:table-cell/text:p/@text:style-name[1] = 'Table_20_Heading'">
+			    <xsl:for-each select="table:table-cell">
+			        <xsl:value-of select="$plus" /><xsl:value-of select="$multieq" />
+			    </xsl:for-each>
+		    </xsl:when>
+		    <xsl:otherwise>
+			    <xsl:for-each select="table:table-cell">
+			        <xsl:value-of select="$plus" /><xsl:value-of select="$multidash" />
+			    </xsl:for-each>
+		    </xsl:otherwise>
+		</xsl:choose>
+
+		<xsl:value-of select="$plus" />
+	</xsl:template>
+
+	<xsl:template name="cellhandler">
+		<xsl:value-of select="$spacechar" />
+		<xsl:apply-templates/>
+		<xsl:value-of select="$spacechar" /><xsl:value-of select="$bar"/>
 	</xsl:template>
 
 <!-- oO text styles -->

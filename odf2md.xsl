@@ -75,6 +75,12 @@
                 </xsl:if>
 	</xsl:template>
 
+	<xsl:template match="//text:h[@text:style-name='header4']|//text:p[@text:style-name='header4']">
+                <xsl:if test="string-length(node()) > 0"> 
+                        <xsl:call-template name="hdrlvl4"/>
+                </xsl:if>
+	</xsl:template>
+
 <!-- Paragraphs -->
 	<xsl:template match="//text:p[@text:style-name='paragraph']">
         <xsl:call-template name="contentblock"/>
@@ -299,19 +305,25 @@
 -->
 <!-- subroutines -->
 	<xsl:template name="hdrlvl1">
-#<xsl:apply-templates/>
+# <xsl:apply-templates/>
 	</xsl:template>
 	
 	<xsl:template name="hdrlvl2">
 		<xsl:value-of select="$new_line" />
 		<xsl:value-of select="$new_line" />
-##<xsl:apply-templates/>
+## <xsl:apply-templates/>
 	</xsl:template>
 	
 	<xsl:template name="hdrlvl3">
 		<xsl:value-of select="$new_line" />
 		<xsl:value-of select="$new_line" />
-###<xsl:apply-templates/>
+### <xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template name="hdrlvl4">
+		<xsl:value-of select="$new_line" />
+		<xsl:value-of select="$new_line" />
+#### <xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template name="contentblock">
