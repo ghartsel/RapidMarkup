@@ -38,7 +38,7 @@ Options:
 
 Output is to STDIO.
 
-Docxform currently generates ReStructuredText and Markdown (GitHub flavor) document formats. Run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
+Docxform generates ReStructuredText and Markdown (GitHub flavor) document formats. Run the program on the sample.fodt file to convert a sample LibreOffice file and see the generated formats and supported semantic styles.
 
 If you're using a docs-as-code documentation methodology that uses GitHub for version control, you can store, access and manage the LibreOffice .fodt-formatted files directly in the repository in the same way you work with any other markup or code source.
 
