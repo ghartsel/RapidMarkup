@@ -12,7 +12,7 @@ Where this document does not provide adequate guidance, the following documents 
 
 Out of consideration of local requirements, where guidance is conflicting, this document takes precedence over those guides.
 
-This document should be used with the [Fauna AsciiDoc User Guide](./test.adoc), which describes the Fauna documentation conventions for implementing the style requirements described in this document. These include the prescribed use of AsciiDoc notation and and Fauna AsciiDoc extensions.
+This document should be used with the [Fauna AsciiDoc User Guide](./adoc_user_guide.adoc), which describes the Fauna documentation conventions for implementing the style requirements described in this document. These include the prescribed use of AsciiDoc notation and and Fauna AsciiDoc extensions.
 
 ## Common errors
 
