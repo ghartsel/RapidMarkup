@@ -7,8 +7,8 @@ This document shows the prescribed Fauna conventions for creating documentation 
 
 test
 
-xref:https://asciidoctor.org/docs/[Asciidoctor Documentation]
+https://asciidoctor.org/docs/[Asciidoctor Documentation]
 
-xref:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
 
-xref:https://docs.antora.org/antora/latest/asciidoc/asciidoc/[Antora Docs - AsciiDoc]
+https://docs.antora.org/antora/latest/asciidoc/asciidoc/[Antora Docs - AsciiDoc]
