@@ -43,7 +43,9 @@ line break
 
 tbd
 
-syntax highlighting
+See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-formatting[Text formatting].
+
+syntax highlighting: <<semantic-hilite>>
 
 === Links
 
@@ -97,6 +99,7 @@ tbd
 
 tbd
 
+[[semantic-hilite]]
 === Keyboard, button, and other UI macros
 
 tbd
@@ -155,7 +158,20 @@ See https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Asciidoct
 |===
 ----
 
-For fixed-width columns, omit `%autowidth` and replace the `a` in `cols=` with relative column width values.
+For fixed-width columns, omit `%autowidth` and replace the `a` in `cols=` with relative column width values.:
+
+----
+[cols="8,45,~", options="header"]
+|===
+| Operator
+| Syntax
+| Description
+
+| `+`
+| _operand1_ `+` _operand2_
+| Addition, sums the operands.
+|===
+----
 
 Omit the table header row by omitting `options="header"`:
 
