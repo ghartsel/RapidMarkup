@@ -7,7 +7,7 @@ documentation gives you the how-to guidance and reference information
 needed for building database applications powered by the {fqlx} query
 language.
 
-This document shows the prescribed Fauna conventions for creating documentation that conforms to the  [Fauna Documentation Style Guide](./style_guide.md).
+This document shows the prescribed Fauna conventions for creating documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
 == Get started
 
