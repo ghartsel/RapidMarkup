@@ -190,11 +190,32 @@ Concept topics present conceptual information, which describes what something is
 
 #### Reference
 
-Reference topics typically present information in list or tabular formats. It is called a reference topic because of the unique usage pattern where the reader needs to reference detailed information that can be difficult to remember. Reference topic content is usually at the syntactic level, whereas the other types of documents tend to be at the semantic level.
+Reference topics typically present information in list or tabular formats. It is called a reference topic because of the unique usage pattern where the reader needs to reference detailed information that can be difficult to remember. Reference topic content is usually at the syntactic level, whereas the other types of documents tend to be at the semantic level. All reference topics across a domain should have a similar layout.
 
 Example reference topics include API syntax descriptions and data structure descriptions.
 
-As much as possible, separate reference-type content from conceptual- and task-type content. Including non-reference content in a reference can obscure the reference content, making it hard to find.
+> **Example:**
+>
+> POST
+>
+>     Execute an FQL transaction.
+>
+> Request
+>
+>     Content-Type: application/json
+>
+> Schema
+>
+>     Query
+>
+>    | Field name | Type | Required | Description |
+>    | --| --- | --- | --- |
+>    | query | String | Yes | FQL transaction to be executed. |
+>    | arguments | Any |  |  |  
+
+Object with values provided to the submitted transaction as variables.
+
+As much as possible, separate reference-type content from conceptual- and task-type content. Including non-reference content in a reference can obscure the reference content, making information hard to find.
 
 #### Task
 
