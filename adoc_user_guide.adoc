@@ -1,15 +1,14 @@
 = User guide
 :description: User guide
 
-
-Whether you're new to {server} or an experienced {server} developer, this
-documentation gives you the how-to guidance and reference information
-needed for building database applications powered by the {fqlx} query
-language.
-
 This document shows the prescribed Fauna conventions for creating documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
 == Get started
 
-If you are new to {server} or migrating from an earlier version,
-these resources get you up to speed quickly.
+test
+
+xref:https://asciidoctor.org/docs/[Asciidoctor Documentation]
+
+xref:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
+
+xref:https://docs.antora.org/antora/latest/asciidoc/asciidoc/[Antora Docs - AsciiDoc]
