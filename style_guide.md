@@ -215,7 +215,7 @@ Example reference topics include API syntax descriptions and data structure desc
 >   | query | String | Yes | FQL transaction to be executed. |
 >   | arguments | Any | No | Provided to the submitted transaction as variables. |  
 
-As much as possible, separate reference-type content from conceptual- and task-type content. Including non-reference content in a reference can obscure the reference content, making information hard to find.
+As much as possible, separate reference-type content from conceptual- and task-type content. Including non-reference content in a reference topic can obscure the reference content, making information hard to find.
 
 #### Task
 

@@ -53,6 +53,33 @@ metadata
 
 tbd
 
+Level 0 heading (document title):
+
+    = Types
+
+Level 1 heading:
+
+    == Scalar types
+
+Level 2 heading:
+
+    === String
+
+Level 3 heading:
+
+    ==== Interpolated strings
+
+tbd
+
+    Types
+
+    Scalar types
+
+    String
+
+    Interpolated strings
+
+
 === Includes
 
 tbd
