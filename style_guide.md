@@ -124,6 +124,8 @@ The following are examples of the same content in monolithic and modular formats
 
 #### Monolithic example:
 
+> *Difficult to read ...*
+>
 > There are four distinct numeric types: plain integers, long integers, floating-point numbers, and complex numbers. In addition, Booleans are a subtype of plain integers. Plain integers (also just called integers) are implemented using long in C, which gives them at least 32 bits of precision. Long integers have unlimited precision. Floating-point numbers are implemented using double in C. All bets on their precision are off unless you happen to know the machine you are working with.
 > 
 > Complex numbers have real and imaginary parts, which are each implemented using double in C. To extract these parts from a complex number z, use z.real and z.imag.
@@ -134,6 +136,8 @@ The following are examples of the same content in monolithic and modular formats
 
 #### Modular example:
 
+> *Easy to scan for information ...*
+>
 > There are four distinct numeric types:
 > 
 > - plain integer
