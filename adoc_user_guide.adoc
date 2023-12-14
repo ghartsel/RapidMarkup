@@ -49,11 +49,11 @@ syntax highlighting
 
 tbd
 
-==== Intrapage
+==== Intrapage link
 
-==== Interpage
+==== Interpage link
 
-==== External
+==== External link
 
 === Document header
 
@@ -65,21 +65,15 @@ metadata
 
 tbd
 
-Level 0 heading (document title):
+----
+= Types
 
-    = Types
+== Scalar types
 
-Level 1 heading:
+=== String
 
-    == Scalar types
-
-Level 2 heading:
-
-    === String
-
-Level 3 heading:
-
-    ==== Interpolated strings
+==== Interpolated strings
+----
 
 See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
 
@@ -105,11 +99,13 @@ tbd
 
 tbd
 
-Click the `btn:[RUN QUERY]` button.
+----
+Click the btn:[RUN QUERY] button.
 
-Type `kbd:[Control + C]` to ...
+Type kbd:[Control + C] to ...
 
-On the `uitext:Home[]` page, click the database `uitext:Name[]`.
+On the uitext:Home[] page, click the database uitext:Name[].
+----
 
 yields:
 
