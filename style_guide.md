@@ -196,15 +196,15 @@ Example reference topics include API syntax descriptions and data structure desc
 
 > **Example:**
 >
-> POST
+> **POST**
 >
 >   Execute an FQL transaction.
 >
-> Request
+> **Request**
 >
 >   Content-Type: application/json
 >
-> Schema
+> **Schema**
 >
 >   Query
 >
