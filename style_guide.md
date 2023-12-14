@@ -202,6 +202,14 @@ Task topics present procedural information that describes how to accomplish a ta
 
 Task topics are characterized by having sequential *steps* that must be performed to accomplish the task.
 
+> **Example:**
+>
+> 1. Log in to the dashboard.
+>
+> 2. Choose **Backups** to view your databases.
+>
+> 3. Click the **Restore-this-database-from-previous-snapshot** icon.
+
 Cookbook recipes are task-type topics. Effective recipes follow the principles of *minimalism*:
 
 - Provide hands-on, action-oriented steps for accomplishing a task. Some introductory content can be included but should be minimized. The key to cookbooks is hands-on learning: "Show don't tell".
