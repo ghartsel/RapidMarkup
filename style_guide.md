@@ -134,6 +134,7 @@ The following are examples of the same content in monolithic and modular formats
 > 
 > Python fully supports mixed arithmetic: when a binary arithmetic operator has operands of different numeric types, the operand with the narrower type is widened to that of the other, where plain integer is narrower than long integer is narrower than floating-point is narrower than complex. Comparisons between numbers of mixed type use the same rule.2.6 The constructors int(), long(), float(), and complex() can be used to produce numbers of a specific type.
 
+[[modular]]
 #### Modular example:
 
 > *Easy to scan for information ...*
@@ -187,6 +188,8 @@ Topics are characterized by the following classification:
 #### Concept
 
 Concept topics present conceptual information, which describes what something is or provides context for the subject being presented. Examples include overviews, introductions, background information, and a general description of functionality without going into detail.
+
+The <<modular>> example is an example of a conceptual topic.
 
 #### Reference
 
