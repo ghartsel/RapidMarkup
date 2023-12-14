@@ -95,7 +95,7 @@ tbd
 
 tbd
 
-=== Keyboard, button, and menu macros
+=== Keyboard, button, and other UI macros
 
 tbd
 
@@ -135,9 +135,74 @@ tbd
 
 tbd
 
+See https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Asciidoctor Docs - Align Content by Cell].
+
 ==== Simple
 
+----
+[%autowidth, cols="a,a", options="header"]
+|===
+| Property
+| Description
+
+| uitext:NAME[]
+| Database name. Use the arrows to sort the list on database name.
+
+| uitext:REGION-GROUP[]
+| Database region group. Use the arrows to sort the list on region group.
+|===
+----
+
+For fixed-width columns, omit `%autowidth` and replace the `a` in `cols=` with relative column width values.
+
+Omit the table header row by omitting `options="header"`:
+
+----
+[%autowidth,cols="a,a,a"]
+|===
+| `abort`
+| `constraint_failure`
+| `constraint_violation`
+
+| `contended_transaction`
+| `divide_by_zero`
+| `document_already_exists`
+
+| `document_not_found`
+| `forbidden`
+| `index_out_of_bounds`
+|===
+----
+
 ==== Nested
+
+tbd
+
+----
+[%autowidth,cols="a,a,a", options="header"]
+|===
+| Field name
+| Value type
+| Description
+
+| `id`
+| type:long[]
+| A unique identifier for a document. {server} assigns this value at creation.
+
+| `document`
+| ref
+| Document associated with this credential. This object has these fields.
+
+[%autowidth,cols="a,a"]
+!===
+! `id`
+! Document identifier associated with this credential.
+
+! `coll`
+! Name of `type:Collection[]` that stores this document.
+!===
+|===
+----
 
 === Comments
 
