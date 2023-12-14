@@ -210,11 +210,11 @@ Task topics are characterized by having sequential *steps* that must be performe
 >
 > 3. Click the **Restore this database from previous snapshot** icon.
 
-Cookbook recipes are task topics. A cookbook is similar to a tutorial in that both are task-oriented but cookbook recipes are related as a set of progressive tasks, where later recipes build on the knowledge gained from earlier recipes. Tutorials tend to be standalone, self-contained tasks.
+Cookbook recipes are task topics. A cookbook is similar to a tutorial in that both are task-oriented but cookbook recipes are related as a set of progressive tasks, where later recipes build on the knowledge gained from earlier recipes. Tutorials tend to be standalone, self-contained artifacts.
 
-Effective cookbook recipes follow these *minimalism* principles:
+Effective cookbook recipes include these *minimalism* principles in the presentation:
 
-- Provide hands-on, action-oriented steps for accomplishing a task. Some overview content can introduce a recipe but it should be minimized. The key to cookbooks is hands-on learning: "Show don't tell".
+- Provide hands-on, action-oriented steps for accomplishing a task. Some overview content can introduce a recipe but it should be minimal: "Show don't tell".
 - Anchor the task in the user's domain.
 - Include descriptions of possible errors and error recovery steps.
 - Guide the reader on where to find additional information.
