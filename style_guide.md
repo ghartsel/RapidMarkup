@@ -196,22 +196,22 @@ Example reference topics include API syntax descriptions and data structure desc
 
 > **Example:**
 >
-> **POST**
+> POST
 >
->   &nbsp;&nbsp;Execute an FQL transaction.
+>   &nbsp;&nbsp;&nbsp;&nbsp;Execute an FQL transaction.
 >
-> **Request**
+> Request
 >
->   Content-Type: application/json
+>   &nbsp;&nbsp;&nbsp;&nbsp;Content-Type: application/json
 >
-> **Schema**
+> Schema
 >
->   Query
+>   &nbsp;&nbsp;&nbsp;&nbsp;Query
 >
->   | Field name | Type | Required | Description |
->   | --| --- | --- | --- |
->   | query | String | Yes | FQL transaction to be executed. |
->   | arguments | Any | No | Provided to the submitted transaction as variables. |  
+>   &nbsp;&nbsp;&nbsp;&nbsp;| Field name | Type | Required | Description |
+>   &nbsp;&nbsp;&nbsp;&nbsp;| --| --- | --- | --- |
+>   &nbsp;&nbsp;&nbsp;&nbsp;| query | String | Yes | FQL transaction to be executed. |
+>   &nbsp;&nbsp;&nbsp;&nbsp;| arguments | Any | No | Provided to the submitted transaction as variables. |  
 
 As much as possible, separate reference-type content from conceptual- and task-type content. Including non-reference content in a reference can obscure the reference content, making information hard to find.
 
