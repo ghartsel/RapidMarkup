@@ -37,7 +37,7 @@ tbd
 
 line length
 
-newline
+line break
 
 === Text formatting
 
@@ -75,6 +75,8 @@ tbd
 ==== Interpolated strings
 ----
 
+There should never be a single subheading below a heading level.
+
 See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
 
 === Includes
@@ -109,11 +111,11 @@ On the uitext:Home[] page, click the database uitext:Name[].
 
 yields:
 
-Click the **RUN QUERY** button.
-
-Type **Control + C** to ...
-
-On the **Home** page, click the database **Name**.
+> Click the **RUN QUERY** button.
+>
+> Type **Control + C** to ...
+>
+> On the **Home** page, click the database **Name**.
 
 === Literals and source code
 
