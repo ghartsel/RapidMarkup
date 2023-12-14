@@ -1,14 +1,16 @@
 = User guide
 :description: User guide
 
-This document shows the prescribed Fauna conventions for creating documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
+This document shows the prescribed Fauna conventions for using AsciiDoc to create documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
-== Get started
-
-test
+== Reference
 
 https://asciidoctor.org/docs/[Asciidoctor Documentation]
 
 https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
 
 https://docs.antora.org/antora/latest/asciidoc/asciidoc/[Antora Docs - AsciiDoc]
+
+== Syntax
+
+tbd
