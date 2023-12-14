@@ -198,20 +198,20 @@ Example reference topics include API syntax descriptions and data structure desc
 >
 > POST
 >
->     Execute an FQL transaction.
+>   Execute an FQL transaction.
 >
 > Request
 >
->     Content-Type: application/json
+>   Content-Type: application/json
 >
 > Schema
 >
->     Query
+>   Query
 >
->    | Field name | Type | Required | Description |
->    | --| --- | --- | --- |
->    | query | String | Yes | FQL transaction to be executed. |
->    | arguments | Any |  |  |  
+>   | Field name | Type | Required | Description |
+>   | --| --- | --- | --- |
+>   | query | String | Yes | FQL transaction to be executed. |
+>   | arguments | Any |  |  |  
 
 Object with values provided to the submitted transaction as variables.
 
