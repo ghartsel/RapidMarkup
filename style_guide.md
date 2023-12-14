@@ -290,7 +290,7 @@ A heading encapsulates the subject of the topic.
 - Do not use italic or bold emphasis unless the title includes a literal, such as a method name.
 - Do not include special characters or punctuation in the heading, including hyphens and question marks.
 
-Limit nesting to four heading levels, including heading level one (`=`). The exception is when documenting naturally hierarchical topics, such as an HTTP interface, which can have an arbitrarily deep hierarchy.
+Limit nesting to four heading levels, including heading level zero (`=`). The exception is when documenting naturally hierarchical topics, such as an HTTP interface, which can have an arbitrarily deep hierarchy.
 
 Concept and reference topic titles and headings are noun clauses that state the subject of the topic. 
 
@@ -299,6 +299,9 @@ Start task topic titles and headings with an action verb. Preferably, use the im
   > **Incorrect**:  Creating an alert
   > 
   > **Correct**: Create an alert
+
+See [Microsoft Style Guide - Headings](https://learn.microsoft.com/en-us/style-guide/scannable-content/headings) for more guidance on how to construct a heading at each level.
+
 
 ### Parallelism
 

@@ -69,16 +69,7 @@ Level 3 heading:
 
     ==== Interpolated strings
 
-tbd
-
-    Types
-
-    Scalar types
-
-    String
-
-    Interpolated strings
-
+See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
 
 === Includes
 
