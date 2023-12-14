@@ -188,7 +188,7 @@ Topics are characterized by the following classification:
 
 Concept topics present conceptual information, which describes what something is or provides context for the subject being presented. Examples include overviews, introductions, background information, and a general description of functionality without going into detail.
 
-The [modular example]#modular-example is an example of a conceptual topic.
+The [modular example](#modular-example) is an example of a conceptual topic.
 
 #### Reference
 
