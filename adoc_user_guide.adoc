@@ -1,4 +1,4 @@
-= User guide
+= Fauna AsciiDoc user guide
 :description: User guide
 
 This document shows the prescribed Fauna conventions for using AsciiDoc to create documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
@@ -113,11 +113,11 @@ On the `uitext:Home[]` page, click the database `uitext:Name[]`.
 
 yields:
 
-Click the btn:[RUN QUERY] button.
+Click the **RUN QUERY** button.
 
-Type kbd:[Control + C] to ...
+Type **Control + C** to ...
 
-On the uitext:Home[] page, click the database uitext:Name[].
+On the **Home** page, click the database **Name**.
 
 === Literals and source code
 
@@ -147,11 +147,13 @@ tbd
 
 tbd
 
-    ////
-    *Comment* block
+----
+////
+*Comment* block
 
-    Use: hide comments
-    ////
+Use: hide comments
+////
+----
 
 === Attributes and substitutions
 
