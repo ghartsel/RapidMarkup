@@ -12,7 +12,7 @@ Where this document does not provide adequate guidance, the following documents 
 
 Out of consideration of local requirements, where guidance is conflicting, this document takes precedence over those guides.
 
-This document should be used with the Fauna AsciiDoc User Guide, which describes how to implement the documentation artifacts described in this document, to the extent supported by AsciiDoc and the documentation tools.
+This document should be used with the [Fauna AsciiDoc User Guide](./test.adoc), which describes how to implement the documentation artifacts described in this document, to the extent supported by AsciiDoc and the documentation tools.
 
 ## Common errors
 
