@@ -23,6 +23,18 @@ tbd
 
 tbd
 
+- Simple
++
+tbd
+
+- Literal
++
+tbd
+
+- Syntax
++
+tbd
+
 line length
 
 newline
@@ -93,6 +105,20 @@ tbd
 
 tbd
 
+Click the `btn:[RUN QUERY]` button.
+
+Type `kbd:[Control + C]` to ...
+
+On the `uitext:Home[]` page, click the database `uitext:Name[]`.
+
+yields:
+
+Click the btn:[RUN QUERY] button.
+
+Type kbd:[Control + C] to ...
+
+On the uitext:Home[] page, click the database uitext:Name[].
+
 === Literals and source code
 
 tbd
@@ -120,6 +146,12 @@ tbd
 === Comments
 
 tbd
+
+    ////
+    *Comment* block
+
+    Use: hide comments
+    ////
 
 === Attributes and substitutions
 
