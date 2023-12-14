@@ -198,7 +198,7 @@ Example reference topics include API syntax descriptions and data structure desc
 >
 > **POST**
 >
->   Execute an FQL transaction.
+>   &nbsp;&nbsp;Execute an FQL transaction.
 >
 > **Request**
 >
