@@ -147,15 +147,10 @@ The following are examples of the same content in monolithic and modular formats
 >
 > | Type                  | Description                                                 |
 > | --------------------- | ----------------------------------------------------------- |
-> | Plain integer         | Plain integers, also called integers, are implemented using |
-> |                       | long in C, which gives them at least 32 bits of precision.  |
-> | Long integer          | Long integers have unlimited precision.                     |
-> | Floating-point number | Floating-point numbers are implemented using double in C.   |
-> |                       | All bets on their precision are off unless you happen to    |
-> |                       | know the machine you are working with.                      |
-> | Complex number        | Complex numbers have a real and imaginary part, which are   |
-> |                       | each implemented using double in C. To extract these parts  |
-> |                       | from a complex number z, use z.real and z.imag.             |
+> | Plain integer         | Plain integers, also called integers, are implemented using long in C, which gives them at least 32 bits of precision. |
+> | Long integer          | Long integers have unlimited precision. |
+> | Floating-point number | Floating-point numbers are implemented using double in C. All bets on their precision are off unless you happen to know the machine you are working with. |
+> | Complex number        | Complex numbers have a real and imaginary part, which are each implemented using double in C. To extract these parts from a complex number z, use z.real and z.imag. |
 > 
 > **Numeric representation**
 > 
