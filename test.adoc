@@ -1,0 +1,14 @@
+= User guide
+:description: User guide
+
+
+Whether you're new to {server} or an experienced {server} developer, this
+documentation gives you the how-to guidance and reference information
+needed for building database applications powered by the {fqlx} query
+language.
+
+
+== Get started
+
+If you are new to {server} or migrating from an earlier version,
+these resources get you up to speed quickly.
