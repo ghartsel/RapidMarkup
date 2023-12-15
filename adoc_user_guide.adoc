@@ -74,16 +74,24 @@ The following optional Antora and locally-defined attributes provide control ove
 | Attribute | Description and usage
 
 | `:page-aliases:`
-| tbd
+| If the page was moved, use this to redirect the previous URL to this page. For example, if the page was previously in the quick_start directory of the learn module, this redirects that URL to this page: `page-aliases: learn:quick_start/quick_start.adoc`.
 
 | `:page-language-bar:`
-| tbd
+| For documents that use the `example::` extension to select among examples, such as different programming languages, `:page-language-bar:` must be set to `true`. The default value is `false`.
 
 | `:page-layout:`
-| .../modules/ROOT/pages/index.adoc
+| Setting `page-layout` to `home` makes styling features available that are defined for the home page style.
+
+Example:
+
+----
+= Welcome to {server} docs
+:description: Welcome to {server} docs
+:page-layout: home
+----
 
 | `:hide-from-nav:`
-| tbd
+| To keep documents from appearing in the left nav panel, set `:hide-from-nav:` to `true`.
 |===
 
 === Section titles
