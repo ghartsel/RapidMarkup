@@ -41,8 +41,8 @@ All example input files have the extension `.fql`. Corresponding example output 
 
 > **Example:**
 >
-> = Dashboard quick start
-> :description: Dashboard Quick Start
+> = Dashboard quick start +
+> :description: Dashboard Quick Start +
 > :page-aliases: learn:quick_start/quick_start.adoc
 
 The first line of every document is a level 0 heading, which is the title of the document:
