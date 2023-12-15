@@ -84,8 +84,8 @@ The following optional Antora and locally-defined attributes provide control ove
 
 Example:
 
-    = Welcome to Fauna docs
-    :description: Welcome to Fauna docs
+    = Welcome to Fauna docs +
+    :description: Welcome to Fauna docs +
     :page-layout: home
 
 | `:hide-from-nav:`
