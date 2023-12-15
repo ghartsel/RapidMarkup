@@ -65,7 +65,7 @@ Example:
 :description: Dashboard Quick Start
 ----
 
-The title is used to support SEO should be descriptive. It's used to generate the HTML description metadata tag:
+The :description: attribute is used to support SEO should be descriptive of the topic. It generates the HTML description metadata tag:
 
 Example:
 
