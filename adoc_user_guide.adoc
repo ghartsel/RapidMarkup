@@ -13,7 +13,27 @@ https://docs.antora.org/antora/latest/asciidoc/asciidoc/[Antora Docs - AsciiDoc]
 
 == File naming
 
-tbd
+=== Topic filenames
+
+Each file should cover a single topic and the topic should be evident from the filename, with an extension of `adoc`.
+
+Generally, use snake case for filenames, where the filename is lowercase and multiple words in the name are separated by an underscore, such as `get_started_fsl.adoc`.
+
+An exception is where the topic is a method or property. In that case, the filename should be the same as the method or property name. Fauna method names are camel case. For example, `lastIndexWhere.adoc`.
+
+=== Example filenames
+
+Currently, there is limited example file naming convention. An example filename might be descriptive of the example, include a number that indicates its relationship to other examples, or use some other logical naming scheme. All example files, regardless of naming convention, separate multiple words in the filename with a dash. For example, `instance-createData-1.fql`.
+
+All example input files have the extension `.fql`. Corresponding example output files have the same base name followed by the extension `.fql.out`:
+
+> **Input file:**
+>
+> instance-createData-1.fql
+>
+> **Output file:**
+>
+> instance-createData-1.fql.out
 
 == Syntax
 
