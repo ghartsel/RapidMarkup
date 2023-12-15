@@ -39,25 +39,39 @@ All example input files have the extension `.fql`. Corresponding example output 
 
 === Document header
 
-> **Example:**
->
-> = Dashboard quick start +
-> :description: Dashboard Quick Start +
-> :page-aliases: learn:quick_start/quick_start.adoc
+Example:
+
+----
+= Dashboard quick start
+:description: Dashboard Quick Start
+:page-aliases: learn:quick_start/quick_start.adoc
+----
 
 The first line of every document is a level 0 heading, which is the title of the document:
 
-> **Example:** = Dashboard quick start
+Example:
+
+----
+= Dashboard quick start
+----
 
 This is the title that should be displayed in the left-side nav panel. Refrain from changing the title in the `nav.adoc` file.
 
 The level 0 heading is immediately followed by _description_ metadata:
 
-> **Example:** = :description: Dashboard Quick Start
+Example:
+
+----
+:description: Dashboard Quick Start
+----
 
 The title is used to support SEO should be descriptive. It's used to generate the HTML description metadata tag:
 
-> **Example:** <meta name="description" content="Dashboard Quick Start">
+Example:
+
+----
+<meta name="description" content="Dashboard Quick Start">
+----
 
 The following optional Antora and locally-defined attributes provide control over page presentation.
 
