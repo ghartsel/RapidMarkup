@@ -69,7 +69,7 @@ The `:description:` attribute is used to support SEO should be descriptive of th
 
 The following optional Antora and locally-defined attributes provide control over page presentation.
 
-[cols="1,1"]
+[cols="2,1"]
 |===
 | Attribute | Description and usage
 
