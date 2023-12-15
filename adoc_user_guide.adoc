@@ -49,8 +49,6 @@ Example:
 
 The first line of every document is a level 0 heading, which is the title of the document:
 
-Example:
-
 ----
 = Dashboard quick start
 ----
@@ -59,15 +57,11 @@ This is the title that should be displayed in the left-side nav panel. Refrain f
 
 The level 0 heading is immediately followed by _description_ metadata:
 
-Example:
-
 ----
 :description: Dashboard Quick Start
 ----
 
-The :description: attribute is used to support SEO should be descriptive of the topic. It generates the HTML description metadata tag:
-
-Example:
+The `:description:` attribute is used to support SEO should be descriptive of the topic. It generates the HTML description metadata tag:
 
 ----
 <meta name="description" content="Dashboard Quick Start">
@@ -122,15 +116,15 @@ tbd
 
 tbd
 
-- Simple
+- Simple paragraph
 +
 tbd
 
-- Literal
+- Literal block
 +
 tbd
 
-- Syntax
+- Syntax block
 +
 tbd
 
@@ -213,7 +207,7 @@ tbd
 
 See https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Asciidoctor Docs - Align Content by Cell].
 
-==== Simple
+==== Simple table
 
 ----
 [%autowidth, cols="a,a", options="header"]
@@ -263,7 +257,7 @@ Omit the table header row by omitting `options="header"`:
 |===
 ----
 
-==== Nested
+==== Nested table
 
 tbd
 
@@ -313,6 +307,6 @@ See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#attribu
 
 See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-replacements[Text replacements].
 
-== Extensions
+== Fauna extensions
 
 tbd
