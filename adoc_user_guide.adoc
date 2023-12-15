@@ -1,7 +1,7 @@
 = Fauna AsciiDoc user guide
 :description: User guide
 
-This document shows the prescribed Fauna conventions for using AsciiDoc to create documentation that conforms to the xref:./style_guide.md[Fauna Documentation Style Guide].
+This document prescribes the Fauna conventions for using AsciiDoc to create documentation for the https://docs.fauna.com/fauna/current/[Fauna documentation site]. In general, vanilla https://asciidoctor.org/docs/[AsciiDoc] notation is valid for Fauna documentation. This guide is intended to promote consistency, for maintenance and tools, and to ensure conformance to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
 == Reference
 
