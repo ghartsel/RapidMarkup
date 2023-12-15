@@ -84,11 +84,9 @@ The following optional Antora and locally-defined attributes provide control ove
 
 Example:
 
-----
-= Welcome to {server} docs
-:description: Welcome to {server} docs
-:page-layout: home
-----
+    = Welcome to {server} docs
+    :description: Welcome to {server} docs
+    :page-layout: home
 
 | `:hide-from-nav:`
 | To keep documents from appearing in the left nav panel, set `:hide-from-nav:` to `true`.
