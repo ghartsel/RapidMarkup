@@ -1,7 +1,7 @@
 = Fauna AsciiDoc user guide
 :description: User guide
 
-This document prescribes the Fauna conventions for using AsciiDoc to create documentation for the https://docs.fauna.com/fauna/current/[Fauna documentation site]. In general, vanilla https://asciidoctor.org/docs/[AsciiDoc] notation is valid for Fauna documentation. This guide defines additional practices that promote consistency, for doc maintenance and tools, and ensure conformance to the xref:./style_guide.md[Fauna Documentation Style Guide].
+This document prescribes the Fauna conventions for using AsciiDoc to create documentation for the https://docs.fauna.com/fauna/current/[Fauna documentation site]. In general, vanilla https://asciidoctor.org/docs/[AsciiDoc] syntax applies to Fauna documentation. This guide defines additional practices that promote consistency, for doc maintenance and tools, and ensure conformance to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
 == Reference
 
@@ -27,13 +27,78 @@ Currently, there is limited example file naming convention. An example filename 
 
 All example input files have the extension `.fql`. Corresponding example output files have the same base name followed by the extension `.fql.out`:
 
-> **Input file:**
+> **Input filename:**
 >
 > instance-createData-1.fql
 >
-> **Output file:**
+> **Output filename:**
 >
 > instance-createData-1.fql.out
+
+== Structure
+
+=== Document header
+
+> **Example:**
+>
+> = Dashboard quick start
+> :description: Dashboard Quick Start
+> :page-aliases: learn:quick_start/quick_start.adoc
+
+The first line of every document is a level 0 heading, which is the title of the document:
+
+> **Example:** = Dashboard quick start
+
+This is the title that should be displayed in the left-side nav panel. Refrain from changing the title in the `nav.adoc` file.
+
+The level 0 heading is immediately followed by _description_ metadata:
+
+> **Example:** = :description: Dashboard Quick Start
+
+The title is used to support SEO should be descriptive. It's used to generate the HTML description metadata tag:
+
+> **Example:** <meta name="description" content="Dashboard Quick Start">
+
+The following optional Antora and locally-defined attributes provide control over page presentation.
+
+[cols="1,1"]
+|===
+| Attribute | Description and usage
+
+| `:page-aliases:`
+| tbd
+
+| `:page-language-bar:`
+| tbd
+
+| `:page-layout:`
+| .../modules/ROOT/pages/index.adoc
+
+| `:hide-from-nav:`
+| tbd
+|===
+
+=== Section titles
+
+tbd
+
+----
+= Types
+
+== Scalar types
+
+=== String
+
+==== Interpolated strings
+----
+
+There should never be a single subheading below a heading level.
+
+See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
+
+=== Includes
+
+tbd
 
 == Syntax
 
@@ -76,34 +141,6 @@ tbd
 ==== Interpage link
 
 ==== External link
-
-=== Document header
-
-tbd
-
-metadata
-
-=== Section titles
-
-tbd
-
-----
-= Types
-
-== Scalar types
-
-=== String
-
-==== Interpolated strings
-----
-
-There should never be a single subheading below a heading level.
-
-See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
-
-=== Includes
-
-tbd
 
 === Lists
 
