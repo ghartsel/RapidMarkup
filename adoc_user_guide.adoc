@@ -165,6 +165,7 @@ tbd
 
 tbd
 
+[[literal-block]]
 ==== Literal block
 
 A literal block that displays content as entered uses the AsciiDoc listing or source delimiter (`----`):
@@ -189,7 +190,18 @@ tbd
 
 ==== Code blocks
 
-tbd
+A code block can be simply written as a <<literal-block>>. For language-specific syntax highlighting, precede the literal block with the `[source, <language>]` macro:
+
+[source, javascript]
+----
+fql`Product
+  .where(.type == "book")
+  .where(.price <= 10000)
+  .where(.price >= 10)
+`
+----
+
+Most common languages are supported.
 
 ==== Example blocks
 
