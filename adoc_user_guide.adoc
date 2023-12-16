@@ -131,6 +131,28 @@ This is typically used to share reusable content.
 
 Included files within a section are located in the /module/<section>/partials directory. Globally included files are located in the /modules/&#95;includes/partials directory.
 
+=== Line length
+
+Line length is limited to 80 characters.
+
+=== Forced line break
+
+To force a line break in a simple paragraph, literal block, or a paragraph included in a table, add `<space>+` at the end of the line where you want the break:
+
+----
+Supported Python versions: +
+Python 3.9 +
+Python 3.10 +
+Python 3.11
+----
+
+which is rendered as:
+
+Supported Python versions: +
+Python 3.9 +
+Python 3.10 +
+Python 3.11
+
 == Syntax
 
 tbd
@@ -161,6 +183,18 @@ You can also indent the lines four spaces:
     let result = await client.query(query)
     console.log(result)
 
+==== Admonitions
+
+tbd
+
+==== Code blocks
+
+tbd
+
+==== Example blocks
+
+tbd
+
 ==== Syntax block
 
 By convention, a Fauna documentation syntax block is delimited using the AsciiDoc example delimiter (`====`):
@@ -171,27 +205,17 @@ Date(dateString: String): Date
 ====
 ----
 
-==== Line length
+==== Comment block
 
-Line length is limited to 80 characters.
-
-==== Forced line break
-
-To force a line break in a simple paragraph, literal block, or a paragraph included in a table, add `<space>+` at the end of the line where you want the break:
+To include a comment in the document without rendering the comment in the presentation, include the comment in a comment delimiter (`////`):
 
 ----
-Supported Python versions: +
-Python 3.9 +
-Python 3.10 +
-Python 3.11
+////
+*Comment* block
+
+Use: hide comments
+////
 ----
-
-which is rendered as:
-
-Supported Python versions: +
-Python 3.9 +
-Python 3.10 +
-Python 3.11
 
 === Text formatting
 
@@ -220,47 +244,6 @@ tbd
 ==== Ordered
 
 ==== Definition
-
-=== Images
-
-tbd
-
-[[semantic-hilite]]
-=== Keyboard, button, and other UI macros
-
-tbd
-
-----
-Click the btn:[RUN QUERY] button.
-
-Type kbd:[Control + C] to ...
-
-On the uitext:Home[] page, click the database uitext:Name[].
-----
-
-yields:
-
-> Click the **RUN QUERY** button.
->
-> Type **Control + C** to ...
->
-> On the **Home** page, click the database **Name**.
-
-=== Literals and source code
-
-tbd
-
-=== Admonitions
-
-tbd
-
-=== Code blocks
-
-tbd
-
-=== Example blocks
-
-tbd
 
 === Tables
 
@@ -348,17 +331,30 @@ tbd
 |===
 ----
 
-=== Comments
+=== Images
+
+tbd
+
+[[semantic-hilite]]
+=== Keyboard, button, and other UI macros
 
 tbd
 
 ----
-////
-*Comment* block
+Click the btn:[RUN QUERY] button.
 
-Use: hide comments
-////
+Type kbd:[Control + C] to ...
+
+On the uitext:Home[] page, click the database uitext:Name[].
 ----
+
+yields:
+
+> Click the **RUN QUERY** button.
+>
+> Type **Control + C** to ...
+>
+> On the **Home** page, click the database **Name**.
 
 === Attributes and substitutions
 
