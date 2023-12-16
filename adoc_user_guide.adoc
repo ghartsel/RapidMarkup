@@ -241,6 +241,7 @@ The literals for commonly supported languages are:
 | text
 | xml
 | yaml
+|
 |===
 
 ==== Example blocks
