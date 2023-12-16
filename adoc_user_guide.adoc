@@ -214,7 +214,34 @@ which is rendered as:
 }
 ----
 
-Most common languages are supported.
+The literals for commonly supported languages are:
+
+[cols="1,1,1,1,1"]
+|===
+
+| bash
+| csharp
+| fqlx
+| go
+| graphql
+
+| html
+| HTTP
+| ini
+| java
+| javascript
+
+| json
+| powershell
+| python
+| scala
+| shell
+
+| sql
+| text
+| xml
+| yaml
+|===
 
 ==== Example blocks
 
