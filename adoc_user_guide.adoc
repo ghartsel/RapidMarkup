@@ -192,13 +192,14 @@ tbd
 
 A code block can be simply written as a <<literal-block>>. For language-specific syntax highlighting, precede the literal block with the `[source, <language>]` macro:
 
-[source, javascript]
+[source, json]
 ----
-fql`Product
-  .where(.type == "book")
-  .where(.price <= 10000)
-  .where(.price >= 10)
-`
+{
+    "error": {
+        "code": "invalid_function_invocation",
+        "message": "The function `al` doesn't exist on `Collection`"
+    }
+}
 ----
 
 Most common languages are supported.
