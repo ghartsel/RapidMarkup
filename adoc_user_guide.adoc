@@ -129,7 +129,7 @@ include::partial$table-shell-common-options-2.adoc[]
 
 This is typically used to share reusable content.
 
-Included files within a section are located in the /module/<section>/partials directory. Globally included files are located in the /modules/{UnderBar}includes/partials directory.
+Included files within a section are located in the /module/<section>/partials directory. Globally included files are located in the /modules/&#43;includes/partials directory.
 
 == Syntax
 
