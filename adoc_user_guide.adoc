@@ -39,7 +39,7 @@ All example input files have the extension `.fql`. Corresponding example output 
 
 === Document header
 
-Example:
+This describes the standardized document front matter and optional attribute definitions.
 
 ----
 = Dashboard quick start
@@ -47,7 +47,7 @@ Example:
 :page-aliases: learn:quick_start/quick_start.adoc
 ----
 
-The first line of every document is a level 0 heading, which is the title of the document:
+The first line of every document is a level 0 heading (`=`), which is the title of the document:
 
 ----
 = Dashboard quick start
@@ -94,25 +94,42 @@ Example:
 
 === Section titles
 
-tbd
+This describes the notation for section titles and the number of levels permitted.
 
 ----
 = Types
+:description: FQLX types
+
+This section lists the ...
 
 == Scalar types
 
+The scalar types are ...
+
 === String
 
+String literals are ...
+
 ==== Interpolated strings
+
+Double-quoted strings support the ...
 ----
 
-There should never be a single subheading below a heading level.
+After the level 0 document title, the example shows level 1 through level 3 headings. Documents should not exceed a depth of level 3 (`====`), and a single, hanging sublevel should never exist by itself. An exception to the number of levels is a document that a naturally hierarchical topic, such as an REST HTTP reference, in which case levels can extend to match the hierarchy.
 
-See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for more guidance on how to construct a heading at each level.
+See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for guidance on how to construct a heading at each level.
 
 === Includes
 
-tbd
+Use the `include::` directive to include text from another file.
+
+----
+include::partial$table-shell-common-options-2.adoc[]
+----
+
+This is typically used to share reusable content.
+
+Included files within a section are located in the /module/<section>/partials directory. Globally included files are located in the /modules/\_includes/partials directory.
 
 == Syntax
 
