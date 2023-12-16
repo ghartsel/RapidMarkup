@@ -151,9 +151,23 @@ tbd
 +
 tbd
 
-line length
+Line length is limited to 80 characters.
 
-line break
+To force a line break in a simple paragraph, literal block, or a paragraph included in a table, add `<space>+` at the end of the line where you want the break:
+
+----
+Supported Python versions: +
+Python 3.9 +
+Python 3.10 +
+Python 3.11
+----
+
+displays:
+
+Supported Python versions: +
+Python 3.9 +
+Python 3.10 +
+Python 3.11
 
 === Text formatting
 
