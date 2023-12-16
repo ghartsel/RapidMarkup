@@ -139,19 +139,23 @@ tbd
 
 tbd
 
-- Simple paragraph
-+
+==== Simple paragraph
+
 tbd
 
-- Literal block
-+
+==== Literal block
+
 tbd
 
-- Syntax block
-+
+==== Syntax block
+
 tbd
+
+==== Line length
 
 Line length is limited to 80 characters.
+
+==== Forced line break
 
 To force a line break in a simple paragraph, literal block, or a paragraph included in a table, add `<space>+` at the end of the line where you want the break:
 
@@ -162,7 +166,7 @@ Python 3.10 +
 Python 3.11
 ----
 
-displays:
+which is rendered as:
 
 Supported Python versions: +
 Python 3.9 +
