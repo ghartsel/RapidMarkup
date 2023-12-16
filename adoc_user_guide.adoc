@@ -135,7 +135,7 @@ Included files within a section are located in the /module/<section>/partials di
 
 tbd
 
-=== Paragraphs
+=== Paragraphs and blocks
 
 tbd
 
@@ -145,11 +145,31 @@ tbd
 
 ==== Literal block
 
-tbd
+A literal block that displays content as entered uses the AsciiDoc listing or source delimiter (`----`):
+
+----
+const type = "book"
+let query  = fql`Product.where(.type == ${type})`
+let result = await client.query(query)
+console.log(result)
+----
+
+You can also indent the lines four spaces:
+
+    const type = "book"
+    let query  = fql`Product.where(.type == ${type})`
+    let result = await client.query(query)
+    console.log(result)
 
 ==== Syntax block
 
-tbd
+By convention, a Fauna documentation syntax block is delimited using the AsciiDoc example delimiter (`====`):
+
+----
+====
+Date(dateString: String): Date
+====
+----
 
 ==== Line length
 
