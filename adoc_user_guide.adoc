@@ -525,8 +525,8 @@ Which is rendered as:
 | Field name | Value type | Description
 
 | `id`
-| type:long[]
-| A unique identifier for a document. {server} assigns this value at creation.
+| long
+| A unique identifier for a document. Fauna assigns this value at creation.
 
 | `document`
 | ref
@@ -538,7 +538,7 @@ Which is rendered as:
 ! Document identifier associated with this credential.
 
 ! `coll`
-! Name of `type:Collection[]` that stores this document.
+! Name of Collection that stores this document.
 !===
 |===
 
