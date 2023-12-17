@@ -579,7 +579,13 @@ Fields:
 [[semantic-hilite]]
 === Keyboard, button, and other UI macros
 
-tbd
+Built-in macros and Fauna extensions provide semantic highlighting for:
+
+- UI buttons
+- Keyboard actions
+- UI display artifacts
+
+These should be used instead of raw text formatting characters, such as `*` and `_`, or any other Ascii character.
 
 ----
 Click the btn:[RUN QUERY] button.
@@ -606,5 +612,65 @@ See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#attribu
 See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-replacements[Text replacements].
 
 == Fauna extensions
+
+Fauna extensions are defined in .../docs.fauna.com/generator.
+
+=== badge
+
+Badges are defined in .../docs.fauna.com/theme/src/css/badge.css.
+
+A badge is defined by appending the badge specification, in parentheses:
+
+> = `list-endpoints` (deprecated)
+
+[cols="1, 1, 1, 1"]
+|===
+| Badge | Description | Specification | Rendered as
+
+| Plan feature
+| The feature is a plan feature with usage limited by plan.
+| `(plan)` or `(plan feature)`
+| `$` icon
+
+| Alpha release
+| The feature is in alpha release.
+| `(alpha)`
+| `A` icon
+
+| Beta release
+| The feature is in beta release.
+| `(beta)`
+| `B` icon
+
+| Deprecated
+| The feature is deprecated.
+| `(deprecated)`
+| `D` icon
+
+| Early access release
+| The feature is in early access.
+| `(early access)`
+| `E` icon
+
+| Preview release
+| The feature is in preview release.
+| `(preview)`
+| `P` icon
+
+|===
+
+=== example
+
+tbd
+
+=== shell
+
+tbd
+
+=== type
+
+tbd
+
+=== uitext
 
 tbd
