@@ -318,7 +318,7 @@ General syntax:
 example::<location>/<exampleFile>[OPTIONS]
 ----
 
-The `<location>` is the path in the /attachments directory.
+The `<location>` is the path of the example file in the /attachments directory.
 
 The `<exampleFile>` is the name of the example code file in `<location>`. All programming language example source files must have the same `<exampleFile>` name, differing only by the file name extension for the language, such as .go, java, and .javascript. Also, each example must have a corresponding example output file of the same name followed by the .out extension. For example, the driver_quick_start.js file has a corresponding driver_quick_start.js.out file.
 
@@ -372,15 +372,15 @@ Use: hide comments
 
 === Text formatting
 
-tbd
+Inline text formatting can be done using AsciiDoc notation. See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-formatting[Text formatting].
 
-See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-formatting[Text formatting].
+However, where semantic highlighting macros exist, they should be preferred over the raw AsciiDoc notation. See <<semantic-hilite>>.
 
-syntax highlighting: <<semantic-hilite>>
+Follow the xref:./style_guide.md[Fauna Documentation Style Guide] for the judicious use of text formatting.
+
+Semantic highlighting is much preferred over using such symbols as quotation marks (`"..."`) for emphasis and parentheses (`(...)`) for appositives, a common technical documentation creator practice.
 
 === Links
-
-tbd
 
 ==== Intrapage link
 
@@ -390,8 +390,6 @@ tbd
 
 === Lists
 
-tbd
-
 ==== Unordered
 
 ==== Ordered
@@ -400,9 +398,12 @@ tbd
 
 === Tables
 
-tbd
+Table notation supports standard AsciiDoc table notation plus internal macros.
 
-See https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Asciidoctor Docs - Align Content by Cell].
+See the following AsciiDoc table documentation for common table formatting options that are used in rendering tables in Fauna documentation:
+
+- https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Align Content by Cell]https://docs.asciidoctor.org/asciidoc/latest/tables/format-cell-content/[Format Content by Cell]
+- https://docs.asciidoctor.org/asciidoc/latest/tables/span-cells/[Span Columns and Rows]
 
 ==== Simple table
 
@@ -456,7 +457,7 @@ Omit the table header row by omitting `options="header"`:
 
 ==== Nested table
 
-tbd
+Use the exclamation mark (`!`) to nest a table within a table cell:
 
 ----
 [%autowidth,cols="a,a,a", options="header"]
@@ -483,6 +484,8 @@ tbd
 !===
 |===
 ----
+
+All other table formatting notation continues to apply to a nested table.
 
 === Images
 
