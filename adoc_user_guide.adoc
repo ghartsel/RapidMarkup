@@ -188,12 +188,14 @@ This tutorial shows you how to use indexes as a more cost-effective and performa
 
 A literal block that displays content as entered uses the AsciiDoc listing/source delimiter (`----`):
 
+--
 ----
 const type = "book"
 let query  = fql`Product.where(.type == ${type})`
 let result = await client.query(query)
 console.log(result)
 ----
+--
 
 Alternatively, you can indent the lines four spaces:
 
@@ -234,7 +236,7 @@ last and ascending, are treated as the same shape. Effectively, including
 =====
 ----
 
-Which is rendered as:
+Which is rendered as the following, with the admonition name replaced by the associated Fauna admonition icon:
 
 [TIP]
 =====
