@@ -167,17 +167,21 @@ tbd
 
 Construct a paragraph as continuous text, terminated by an empty line. Line feeds within the 80-character limited line length are not displayed. An empty line separates paragraphs.
 
-> The previous Collection tutorial uses built-in Set methods
-> that traverse the whole dataset to get the data you want.
->
-> This tutorial shows you how to use indexes as a more
-> cost-effective and performant alternative.
+----
+The previous Collection tutorial uses built-in Set methods
+that traverse the whole dataset to get the data you want.
+
+This tutorial shows you how to use indexes as a more
+cost-effective and performant alternative.
+----
 
 Which is rendered as:
 
-> The previous Collection tutorial uses built-in Set methods that traverse the whole dataset to get the data you want.
->
-> This tutorial shows you how to use indexes as a more cost-effective and performant alternative.
+----
+The previous Collection tutorial uses built-in Set methods that traverse the whole dataset to get the data you want.
+
+This tutorial shows you how to use indexes as a more cost-effective and performant alternative.
+----
 
 [[literal-block]]
 ==== Literal block
