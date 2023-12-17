@@ -549,11 +549,11 @@ All other table formatting notations also apply to a nested table.
 
 Image definition has the following syntax:
 
-image:<imageFile>["<alternate>", <widthSpec>, <heightSpec>, role="<role>"]
+    image:<imageFile>["<alternate>", <widthSpec>, <heightSpec>, role="<role>"]
 
 Example:
 
-image:choose-db.png["Dashboard quick start", 1058, 294, role="center zoom"]
+    image:choose-db.png["Dashboard quick start", 1058, 294, role="center zoom"]
 
 Fields:
 
