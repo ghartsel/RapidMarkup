@@ -25,7 +25,7 @@ An exception is where the topic is a method or property. In that case, the filen
 
 === Example filenames
 
-Currently, there is limited example file naming convention. An example filename might be descriptive of the example, include a number that indicates its relationship to other examples, or use some other logical naming scheme. All example files, regardless of naming convention, separate multiple words in the filename with a dash. For example, `instance-createData-1.fql`.
+Currently, there is limited example file naming convention. An example filename might be descriptive of the example, include a number that indicates its relationship to other examples or use some other logical naming scheme. All example files, regardless of naming convention, separate multiple words in the filename with a dash. For example, `instance-createData-1.fql`.
 
 All example input files have the extension `.fql`. Corresponding example output files have the same base name followed by the extension `.fql.out`:
 
@@ -63,20 +63,20 @@ The level 0 heading is immediately followed by _description_ metadata:
 :description: Dashboard Quick Start
 ----
 
-The `:description:` attribute is used to support SEO should be descriptive of the topic. It generates the HTML description metadata tag:
+The `:description:` attribute supports SEO and should be descriptive of the topic. It generates the HTML description metadata tag:
 
 ----
 <meta name="description" content="Dashboard Quick Start">
 ----
 
-The following optional Antora and locally-defined attributes provide control over page presentation.
+The following optional Antora and locally defined attributes provide control over page presentation.
 
 [cols="2,1"]
 |===
 | Attribute | Description and usage
 
 | `:page-aliases:`
-| If the page was moved, use this to redirect the previous URL to this page. For example, if the page was previously in the quick_start directory of the learn module, this redirects that URL to this page: `page-aliases: learn:quick_start/quick_start.adoc`.
+| If the page was moved, use this to redirect the previous URL to this page. For example, if the page was previously in the quick_start directory of the learn module, the following redirects that URL to this page: `page-aliases: learn:quick_start/quick_start.adoc`.
 
 | `:page-language-bar:`
 | For documents that use the `example::` extension to select among examples, such as different programming languages, `:page-language-bar:` must be set to `true`. The default value is `false`.
@@ -117,7 +117,7 @@ String literals are ...
 Double-quoted strings support the ...
 ----
 
-After the level 0 document title, the example shows level 1 through level 3 headings. Documents should not exceed a depth of level 3 (`====`), and a single, hanging sublevel should never exist by itself. An exception to the number of levels is a document that a naturally hierarchical topic, such as an REST HTTP reference, in which case levels can extend to match the hierarchy.
+After the level 0 document title, the example shows level 1 through level 3 headings. Documents should not exceed a depth of level 3 (`====`), and a single, hanging sublevel should never exist by itself. An exception to the number of levels restriction is when documenting a naturally hierarchical topic, such as a REST HTTP reference, in which case levels can extend to match the hierarchy.
 
 See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Microsoft Style Guide - Headings] for guidance on how to construct a heading at each level.
 
@@ -148,7 +148,7 @@ Python 3.10 +
 Python 3.11
 ----
 
-which is rendered as:
+Which is rendered as:
 
 Supported Python versions: +
 Python 3.9 +
@@ -165,7 +165,21 @@ tbd
 
 ==== Simple paragraph
 
-tbd
+Construct a paragraph as continuous text, terminated by an empty line. Line feeds within the 80-character limited line length are not displayed. An empty line separates paragraphs.
+
+> The previous Collection tutorial uses built-in Set methods
+> that traverse the whole dataset to get the data you want.
+>
+> This tutorial shows you how to use indexes as a more
+> cost-effective and performant alternative.
+
+Which is rendered as:
+
+The previous Collection tutorial uses built-in Set methods
+that traverse the whole dataset to get the data you want.
+
+This tutorial shows you how to use indexes as a more
+cost-effective and performant alternative.
 
 [[literal-block]]
 ==== Literal block
@@ -204,7 +218,7 @@ A code block can be simply written as a <<literal-block>>. For language-specific
     }
     ----
 
-which is rendered as:
+Which is rendered as:
 
 [source, json]
 ----
