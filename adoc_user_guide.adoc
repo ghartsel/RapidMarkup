@@ -518,6 +518,31 @@ Use the exclamation mark (`!`) to nest a table within a table cell:
 |===
 ----
 
+Which is rendered as:
+
+[cols="a,a,a"]
+|===
+| Field name | Value type | Description
+
+| `id`
+| type:long[]
+| A unique identifier for a document. {server} assigns this value at creation.
+
+| `document`
+| ref
+| Document associated with this credential. This object has these fields.
+
+[%autowidth,cols="a,a"]
+!===
+! `id`
+! Document identifier associated with this credential.
+
+! `coll`
+! Name of `type:Collection[]` that stores this document.
+!===
+|===
+
+
 All other table formatting notation continues to apply to a nested table.
 
 === Images
