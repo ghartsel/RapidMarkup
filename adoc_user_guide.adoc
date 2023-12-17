@@ -572,8 +572,8 @@ Fields:
 
 | `role`
 | (optional) Image presentation behavior: +
-`center` = Center image on page. +
-`zoom` = Enable zoom on clicking on image.
+`center` = (optional) Center image on page. +
+`zoom` = (optional) Enable zoom on clicking on image.
 |===
 
 [[semantic-hilite]]
@@ -584,7 +584,7 @@ tbd
 ----
 Click the btn:[RUN QUERY] button.
 
-Type kbd:[Control + C] to ...
+Enter kbd:[Return].
 
 On the uitext:Home[] page, click the database uitext:Name[].
 ----
@@ -593,7 +593,7 @@ yields:
 
 > Click the **RUN QUERY** button.
 >
-> Type **Control + C** to ...
+> Type [Control + C] to ...
 >
 > On the **Home** page, click the database **Name**.
 
