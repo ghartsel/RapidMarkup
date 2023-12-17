@@ -308,7 +308,45 @@ The literals for commonly supported languages are:
 
 ==== Example blocks
 
-tbd
+The examples block is used to display code examples for the supported programming languages. Example blocks are used with the `selector:langs[]` directive to select a programming language using the language selector tab.
+
+Include code examples for the languages you want to show in the /attachments directory.
+
+General syntax:
+
+----
+example::<location>/<exampleFile>[OPTIONS]
+----
+
+The `<location>` is the path in the /attachments directory.
+
+The `<exampleFile>` is the name of the example code file in `<location>`. All programming language example source files must have the same `<exampleFile>` name, differing only by the file name extension for the language, such as .go, java, and .javascript. Also, each example must have a corresponding example output file of the same name followed by the .out extension. For example, the driver_quick_start.js file has a corresponding driver_quick_start.js.out file.
+
+OPTIONS:
+
+You can declare multiple options in the `example::` directive.
+
+[cols="2,1"]
+|===
+| Option | Description
+
+| `full`
+| Enable examples for all provided programming languages: +
+`true` = Enable all provided languages.+
+`false` = Enable only those languages specified by the `only` option.
+| `only`
+| Enable a specific programming language example with a matching programming language file extension, such as `only=js` to display only the JavaScript example.
+
+| `noout`
+| Disable the example output display: +
+`true` = Disable displaying the example's corresponding .out file.
+`false` = (default) Display the example's corresponding .out file.
+
+| `onlyout`
+| Disable the example input display: +
+`true` = Disable the example's input file.
+`false` = (default) Display the example's input file.
+|===
 
 ==== Syntax block
 
