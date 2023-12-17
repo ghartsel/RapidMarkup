@@ -426,14 +426,14 @@ See the following AsciiDoc table documentation for common table formatting optio
 |===
 | Property | Description
 
-| uitext:NAME[]
+| **NAME[]**
 | Database name. Use the arrows to sort the list on database name.
 
-| uitext:REGION-GROUP[]
+| **REGION-GROUP[]**
 | Database region group. Use the arrows to sort the list on region group.
 
-| uitext:BACKUPS[]
-| Backups enabled state. A {check} indicates backups are enabled for
+| **BACKUPS[]**
+| Backups enabled state. A check indicates backups are enabled for
 the database.
 
 
