@@ -199,8 +199,8 @@ Alternatively, you can indent the lines four spaces:
 
 > &nbsp;&nbsp;&nbsp;&nbsp;const type = "book" +
 > &nbsp;&nbsp;&nbsp;&nbsp;let query  = fql`Product.where(.type == ${type})` +
->     let result = await client.query(query) +
->     console.log(result)
+> &nbsp;&nbsp;&nbsp;&nbsp;let result = await client.query(query) +
+> &nbsp;&nbsp;&nbsp;&nbsp;console.log(result)
 
 Both methods render the following literal block:
 
