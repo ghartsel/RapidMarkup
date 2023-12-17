@@ -619,9 +619,7 @@ Fauna extensions are defined in .../docs.fauna.com/generator.
 
 Badges are defined in .../docs.fauna.com/theme/src/css/badge.css.
 
-A badge is defined by appending the badge specification, in parentheses:
-
-> = `list-endpoints` (deprecated)
+A badge is defined by appending the badge specification, in parentheses: `= `list-endpoints` (deprecated)`
 
 [cols="1, 1, 1, 1"]
 |===
