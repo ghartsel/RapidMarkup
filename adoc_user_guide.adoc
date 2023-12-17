@@ -619,7 +619,11 @@ Fauna extensions are defined in .../docs.fauna.com/generator.
 
 Badges are defined in .../docs.fauna.com/theme/src/css/badge.css.
 
-A badge is defined by appending the badge specification, in parentheses: `= `list-endpoints` (deprecated)`
+A badge is defined by appending the badge specification, in parentheses:
+
+> = `list-endpoints` (deprecated)
+
+The following table lists the available badges:
 
 [cols="1, 1, 1, 1"]
 |===
@@ -659,16 +663,45 @@ A badge is defined by appending the badge specification, in parentheses: `= `lis
 
 === example
 
-tbd
+Display a formatted programming example from the example in the /attachments directory:
+
+----
+example::get_started:quick_start/driver_quick_start[full=true,noout=true]
+----
 
 === shell
 
-tbd
+Display a formatted shell command:
+
+----
+shell:user[fauna eval nonexistdb "Collection.all()"]
+----
 
 === type
 
-tbd
+Display the defined type name with a link to the type description:
+
+----
+type:set[]
+----
+
+This displays `Set` and links to the set description in the FQL language reference Type document.
 
 === uitext
 
-tbd
+Format UI text for presentation, as shown in these examples:
+
+[cols="1, 1, 1, 1"]
+|===
+| UI display | Semantic highlighting | Rendered as | Notes
+
+| BACKUPS
+| `uitext:BACKUPS[]`
+| **BACKUPS**
+|
+
+| Backup settings
+| `uitext:Backup-settings[]`
+| **Backup settings**
+| Multi-word UI text must be separated by a dash in the semantic highlighting. This could be improved but covers most use cases.
+|===
