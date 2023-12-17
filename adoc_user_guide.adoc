@@ -470,6 +470,24 @@ Omit the table header row by omitting `options="header"`:
 |===
 ----
 
+Which is rendered as:
+
+[cols="a,a,a"]
+|===
+| `abort`
+| `constraint_failure`
+| `constraint_violation`
+
+| `contended_transaction`
+| `divide_by_zero`
+| `document_already_exists`
+
+| `document_not_found`
+| `forbidden`
+| `index_out_of_bounds`
+|===
+
+
 ==== Nested table
 
 Use the exclamation mark (`!`) to nest a table within a table cell:
