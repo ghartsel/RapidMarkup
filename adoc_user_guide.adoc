@@ -400,7 +400,7 @@ Semantic highlighting is much preferred over using such symbols as quotation mar
 
 Table notation supports standard AsciiDoc table notation plus internal macros.
 
-See the following AsciiDoc table documentation for common table formatting options that are used in rendering tables in Fauna documentation:
+See the following AsciiDoc table documentation for common table formatting options that are used to render tables in Fauna documentation:
 
 - https://docs.asciidoctor.org/asciidoc/latest/tables/align-by-cell/[Align Content by Cell]
 - https://docs.asciidoctor.org/asciidoc/latest/tables/format-cell-content/[Format Content by Cell]
@@ -421,6 +421,21 @@ See the following AsciiDoc table documentation for common table formatting optio
 | Database region group. Use the arrows to sort the list on region group.
 |===
 ----
+
+[cols="2,1"]
+|===
+| Property | Description
+
+| uitext:NAME[]
+| Database name. Use the arrows to sort the list on database name.
+
+| uitext:REGION-GROUP[]
+| Database region group. Use the arrows to sort the list on region group.
+
+| uitext:BACKUPS[]
+| Backups enabled state. A {check} indicates backups are enabled for
+the database.
+
 
 For fixed-width columns, omit `%autowidth` and replace the `a` in `cols=` with relative column width values.:
 
