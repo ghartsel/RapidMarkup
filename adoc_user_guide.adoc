@@ -3,6 +3,8 @@
 
 This document prescribes the Fauna conventions for using AsciiDoc to create documentation for the https://docs.fauna.com/fauna/current/[Fauna documentation site]. In general, vanilla https://asciidoctor.org/docs/[AsciiDoc] syntax applies to Fauna documentation. This guide defines additional practices that promote consistency, for doc maintenance and tools, and ensure conformance to the xref:./style_guide.md[Fauna Documentation Style Guide].
 
+Many but not all of the guidelines listed in this document are checked at build time when running `make`, `make quick`, or `make checks`. To publish the documentation, the build should have no errors.
+
 == Reference
 
 https://asciidoctor.org/docs/[Asciidoctor Documentation]
