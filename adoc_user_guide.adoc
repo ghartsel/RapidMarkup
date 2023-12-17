@@ -175,11 +175,9 @@ Construct a paragraph as continuous text, terminated by an empty line. Line feed
 
 Which is rendered as:
 
-The previous Collection tutorial uses built-in Set methods
-that traverse the whole dataset to get the data you want.
-
-This tutorial shows you how to use indexes as a more
-cost-effective and performant alternative.
+> The previous Collection tutorial uses built-in Set methods that traverse the whole dataset to get the data you want.
+>
+> This tutorial shows you how to use indexes as a more cost-effective and performant alternative.
 
 [[literal-block]]
 ==== Literal block
