@@ -186,7 +186,7 @@ This tutorial shows you how to use indexes as a more cost-effective and performa
 [[literal-block]]
 ==== Literal block
 
-A literal block that displays content as entered uses the AsciiDoc listing or source delimiter (`----`):
+A literal block that displays content as entered uses the AsciiDoc listing/source delimiter (`----`):
 
 ----
 const type = "book"
@@ -195,7 +195,7 @@ let result = await client.query(query)
 console.log(result)
 ----
 
-You can also indent the lines four spaces:
+Alternatively, you can indent the lines four spaces:
 
     const type = "book"
     let query  = fql`Product.where(.type == ${type})`
@@ -204,7 +204,44 @@ You can also indent the lines four spaces:
 
 ==== Admonitions
 
-tbd
+Fauna documentation is limited to including the following admonitions, in order of severity, with the given syntax:
+
+[cols="2,1"]
+|===
+| Admonition | Usage
+
+| `[TIP]`
+| Use the _tip_ admonition to provide additional but non-essential information, such as a best practice.
+
+| `[NOTE]`
+| Use the _note_ admonition sparingly. Technical writers and developers tend to over use this admonition in an effort to highlight content. In general, use the _important_ and _warning_ admonitions to bring attention to content. Otherwise, consider all content to be equally important or it wouldn't be in the document.
+
+| `[IMPORTANT]`
+| Use the _important_ admonition if it's absolutely necessary to bring attention to the content. Its use should be minimal.
+
+| `[WARNING]`
+| Use the _warning_ admonition to caution the reader against a corrupting or catestropic action that might have significant implact if not heeded. A warning generally means "Do not do this".
+|===
+
+Admonition blocks are delimited by the example delimiter (`====`) and can include multiple paragraphs:
+
+----
+[TIP]
+=====
+Two indexes with the same shape, except for the `id` field specified
+last and ascending, are treated as the same shape. Effectively, including
+`id` as the last covered value is the same as not including it.
+=====
+----
+
+Which is rendered as:
+
+[TIP]
+=====
+Two indexes with the same shape, except for the `id` field specified
+last and ascending, are treated as the same shape. Effectively, including
+`id` as the last covered value is the same as not including it.
+=====
 
 ==== Code blocks
 
