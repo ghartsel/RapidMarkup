@@ -593,7 +593,7 @@ yields:
 
 > Click the **RUN QUERY** button.
 >
-> Type [Control + C] to ...
+> enter [Return].
 >
 > On the **Home** page, click the database **Name**.
 
