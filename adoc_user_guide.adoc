@@ -422,6 +422,8 @@ See the following AsciiDoc table documentation for common table formatting optio
 |===
 ----
 
+Which is rendered as:
+
 [cols="2,1"]
 |===
 | Property | Description
@@ -431,10 +433,7 @@ See the following AsciiDoc table documentation for common table formatting optio
 
 | **REGION-GROUP[]**
 | Database region group. Use the arrows to sort the list on region group.
-
-| **BACKUPS[]**
-| Backups enabled state. A check indicates backups are enabled for
-the database.
+|===
 
 
 For fixed-width columns, omit `%autowidth` and replace the `a` in `cols=` with relative column width values.:
