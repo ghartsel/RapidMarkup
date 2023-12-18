@@ -530,7 +530,7 @@ Database::
 Which is rendered as:
 
 ----
-Database
+__Database__
 
     A database can have Collections, Documents, User-defined functions, security elements such as Keys, Tokens, Credentials, Access Providers, and child databases.
 ----
