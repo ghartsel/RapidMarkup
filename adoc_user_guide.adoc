@@ -392,7 +392,7 @@ See <<this-heading>> for more information
 == This heading
 ----
 
-To link to content other than a heading, define an anchor and link to the anchor:
+To link to content other than a heading, define an anchor at the location you want to link to and link to the anchor:
 
 Anchor definition example:
 
@@ -401,7 +401,7 @@ Anchor definition example:
 This describes something about collections.
 ----
 
-Link to anchor example:
+Link to user-defined anchor example:
 
 ----
 See <<collection-def>>.
@@ -409,7 +409,42 @@ See <<collection-def>>.
 
 ==== Interpage link
 
+Use the `xref:` directive to link to the start of another page, specifying the file name.
+
+The link can be a relative link in the same module:
+
+----
+See xref:./precedence.adoc[] for the operator precedence and associativity table.
+----
+
+To link to a document in another module, specify the module name:
+
+----
+The xref:get_started:dashboard.adoc[] describes how to get started.
+----
+
+You can also link to an anchor in another page by specifying the anchor following the hash (`#`) symbol:
+
+----
+The xref:get_started:dashboard.adoc#log-in[] describes how to log in.
+----
+
 ==== External link
+
+Define external links using the full URL:
+
+----
+See the Python Package Index (PyPI) at https://pypi.org/project/fauna/[^].
+----
+
+This renders the raw URL as a link.
+
+You must include the caret (`^`) symbol in brackets to open the link in a new tab or window. A missing caret results in a build error.
+
+You can also replace the raw URL link with text by including the text in brackets (`[ ... ]`):
+----
+See the at https://pypi.org/project/fauna/[Python Package Index^] (PyPI).
+----
 
 === Lists
 
