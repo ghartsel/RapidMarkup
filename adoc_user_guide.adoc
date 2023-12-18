@@ -459,7 +459,6 @@ Unordered lists mostly follow conventional https://docs.asciidoctor.org/asciidoc
 - 15-days
 - 1-month (default)
 - 1-year
-- indefinitely
 ----
 
 Which is rendered as:
@@ -468,7 +467,6 @@ Which is rendered as:
 - 15-days
 - 1-month (default)
 - 1-year
-- indefinitely
 
 Multi-line list items should be separated by a blank line.
 
@@ -478,12 +476,11 @@ Nested list items are prefaced with an asterisk (`*`) and set off by blank lines
 - 5-days
 - 15-days
 
-* line 1
-* line 2
+* nested line 1
+* nested line 2
 
 - 1-month (default)
 - 1-year
-- indefinitely
 ----
 
 Which is rendered as:
@@ -491,14 +488,37 @@ Which is rendered as:
 - 5-days
 - 15-days
 
-* line 1
-* line 2
+* nested line 1
+* nested line 2
 
 - 1-month (default)
 - 1-year
-- indefinitely
 
 ==== Ordered
+
+Use the `[.procedure]` macro to define an ordered list and number each step using a dot (`.`).
+
+----
+[.procedure]
+. Log in to the dashboard.
+
+. Choose uitext:Backups[] in the left navigation panel to view your
+databases and the database backup properties.
+
+. In the row of the database you want to change backup properties for,
+click the uitext:ACTIONS[] icon on the far right.
+----
+
+Which is rendered as:
+
+. Log in to the dashboard.
+
+. Choose **Backups** in the left navigation panel to view your
+databases and the database backup properties.
+
+. In the row of the database you want to change backup properties for,
+click the **ACTIONS** icon on the far right.
+
 
 ==== Definition
 
