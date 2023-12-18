@@ -392,7 +392,20 @@ See <<this-heading>> for more information
 == This heading
 ----
 
-Jump to <<text-formatting>>
+To link to content other than a heading, define an anchor and link to the anchor:
+
+Anchor definition example:
+
+----
+[[collection-def]]
+This describes something about collections.
+----
+
+Link to anchor example:
+
+----
+See <<collection-def>>.
+----
 
 ==== Interpage link
 
