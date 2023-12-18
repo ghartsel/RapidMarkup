@@ -448,7 +448,40 @@ See the at https://pypi.org/project/fauna/[Python Package Index^] (PyPI).
 
 === Lists
 
+This describes the kinds of lists used in Fauna documentation.
+
 ==== Unordered
+
+Unordered lists mostly follow conventional https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/[AsciiDoc list notation], preferring prefacing each list item with a dash (`-`).
+
+----
+- 5-days
+- 15-days
+- 1-month (default)
+- 1-year
+- indefinitely
+----
+
+Which is rendered as:
+
+- 5-days
+- 15-days
+- 1-month (default)
+- 1-year
+- indefinitely
+
+- 5-days
+- 15-days
+
+  - line 1
+  - line 2
+
+- 1-month (default)
+- 1-year
+- indefinitely
+
+
+Multi-line list items should be separated by a blank line.
 
 ==== Ordered
 
@@ -669,7 +702,7 @@ See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#attribu
 
 See https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#text-replacements[Text replacements].
 
-== Fauna extensions
+== Miscellaneous macros
 
 Fauna extensions are defined in .../docs.fauna.com/generator.
 
