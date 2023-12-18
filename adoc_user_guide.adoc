@@ -219,13 +219,13 @@ Fauna documentation is limited to including the following admonitions, in order 
 | Use the _tip_ admonition to provide additional but non-essential information, such as a best practice.
 
 | `[NOTE]`
-| Use the _note_ admonition sparingly. Technical writers and developers tend to over use this admonition in an effort to highlight content. In general, use the _important_ and _warning_ admonitions to bring attention to content. Otherwise, consider all content to be equally important or it wouldn't be in the document.
+| Use the _note_ admonition sparingly. Technical writers and developers tend to overuse this admonition in an effort to highlight content. In general, use the _important_ and _warning_ admonitions to bring attention to content. Otherwise, consider all content to be equally important or it wouldn't be in the document.
 
 | `[IMPORTANT]`
 | Use the _important_ admonition if it's absolutely necessary to bring attention to the content. Its use should be minimal.
 
 | `[WARNING]`
-| Use the _warning_ admonition to caution the reader against a corrupting or catastrophic action that might have significant implact if not heeded. A warning generally means "Do not do this".
+| Use the _warning_ admonition to caution the reader against a corrupting or catastrophic action that might have significant impact if not heeded. A warning generally means "Do not do this".
 |===
 
 Admonition blocks are delimited by the example delimiter (`====`) and can include multiple paragraphs:
@@ -511,13 +511,13 @@ databases and the database backup properties.
 click the uitext:ACTIONS[] icon on the far right.
 ----
 
-Which is rendered as the following with numberic icons:
+Which is rendered as the following with numeric icons:
 
 > . Log in to the dashboard.
 > . Choose **Backups** in the left navigation panel to view your databases and the database backup properties.
 > . In the row of the database you want to change backup properties for, click the **ACTIONS** icon on the far right.
 
-Ordered list should not have nested steps. See xref:./style_guide.md#ordered-lists[Ordered lists].
+An ordered list should not have nested steps. See xref:./style_guide.md#ordered-lists[Ordered lists].
 
 
 ==== Definition list
@@ -826,7 +826,7 @@ Display the defined type name with a link to the type description:
 type:set[]
 ----
 
-This displays `Set` and links to the set description in the FQL language reference Type document.
+This displays `Set` with a link to the set description in the FQL language reference Type document.
 
 === uitext
 
