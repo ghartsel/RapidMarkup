@@ -532,7 +532,7 @@ Which is rendered as:
 ----
 Database
 
-&nbsp;&nbsp;&nbsp;&nbsp;A database can have Collections, Documents, User-defined functions, security elements such as Keys, Tokens, Credentials, Access Providers, and child databases.
+    A database can have Collections, Documents, User-defined functions, security elements such as Keys, Tokens, Credentials, Access Providers, and child databases.
 ----
 
 === Tables
