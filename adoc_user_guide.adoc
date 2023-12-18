@@ -511,13 +511,9 @@ click the uitext:ACTIONS[] icon on the far right.
 
 Which is rendered as:
 
-. Log in to the dashboard.
-
-. Choose **Backups** in the left navigation panel to view your
-databases and the database backup properties.
-
-. In the row of the database you want to change backup properties for,
-click the **ACTIONS** icon on the far right.
+> . Log in to the dashboard.
+> . Choose **Backups** in the left navigation panel to view your databases and the database backup properties.
+> . In the row of the database you want to change backup properties for, click the **ACTIONS** icon on the far right.
 
 Ordered list should not have nested steps. See xref:./style_guide.md#ordered-lists[Ordered lists].
 
