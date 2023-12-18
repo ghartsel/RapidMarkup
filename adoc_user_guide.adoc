@@ -382,6 +382,8 @@ Semantic highlighting is much preferred over using such symbols as quotation mar
 
 === Links
 
+Link directives mostly conform to standard AsciiDoc notation.
+
 ==== Intrapage link
 
 ==== Interpage link
