@@ -463,10 +463,10 @@ Unordered lists mostly follow conventional https://docs.asciidoctor.org/asciidoc
 
 Which is rendered as:
 
-- 5-days
-- 15-days
-- 1-month (default)
-- 1-year
+> - 5-days
+> - 15-days
+> - 1-month (default)
+> - 1-year
 
 Multi-line list items should be separated by a blank line.
 
@@ -485,14 +485,14 @@ Nested list items are prefaced with an asterisk (`*`) and set off by blank lines
 
 Which is rendered as:
 
-- 5-days
-- 15-days
-
-* nested line 1
-* nested line 2
-
-- 1-month (default)
-- 1-year
+> - 5-days
+> - 15-days
+>
+> * nested line 1
+> * nested line 2
+>
+> - 1-month (default)
+> - 1-year
 
 ==== Ordered
 
@@ -509,7 +509,7 @@ databases and the database backup properties.
 click the uitext:ACTIONS[] icon on the far right.
 ----
 
-Which is rendered as:
+Which is rendered as the following with numberic icons:
 
 > . Log in to the dashboard.
 > . Choose **Backups** in the left navigation panel to view your databases and the database backup properties.
