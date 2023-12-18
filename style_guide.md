@@ -891,6 +891,7 @@ The following guidelines should be applied when using unordered lists:
 - Use parallel structure and begin each item with the same type of word (noun, verb, adjective, etc.).
 - Do not use an unordered list for only a single item.
 
+[[ordered-lists]]
 ### Ordered lists
 
 Use an ordered list to list steps or procedures that must occur in a specific order.
@@ -906,7 +907,7 @@ The following guidelines should be applied when using ordered lists:
 - Do not use numbers to list facts and information.
 - Do not use an ordered list for a procedure that has a single step.
 - Limit the number of steps to about seven items. If you find that more than seven steps are needed, consider restructuring the task description.
-- Nested ordered lists are discouraged. As much as possible, do not use sub-steps, commonly written as steps a., b., c., etc. Instead, restructure the task description such that each series of sub-steps is a separate paragraph with an introductory sentence.
+- Nested ordered lists are discouraged. As much as possible, do not use sub-steps, commonly written as steps a., b., c., etc. Instead, restructure the task description such that each series of sub-steps is a separate paragraph with an introductory sentence. A method that usually gives satisfactory results is to decompose the steps into major categories and title the category with `Step x - this category`.
 
 ## Numbers
 
