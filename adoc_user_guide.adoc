@@ -125,9 +125,9 @@ See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Mic
 
 Use the `include::` directive to include text from another file.
 
-====
+----
 include::partial$table-shell-common-options-2.adoc[]
-====
+----
 
 This is typically used to share reusable content.
 
@@ -186,12 +186,12 @@ This tutorial shows you how to use indexes as a more cost-effective and performa
 
 A literal block that displays content as entered uses the AsciiDoc listing/source delimiter (`----`):
 
-    -----
+    ----
     const type = "book"
     let query  = fql`Product.where(.type == ${type})`
     let result = await client.query(query)
     console.log(result)
-    -----
+    ----
 
 Alternatively, you can indent the lines four spaces:
 
