@@ -470,6 +470,11 @@ Which is rendered as:
 - 1-year
 - indefinitely
 
+Multi-line list items should be separated by a blank line.
+
+Nested list items are prefaced with an asterisk (`*`) and set off by blank lines:
+
+----
 - 5-days
 - 15-days
 
@@ -479,9 +484,19 @@ Which is rendered as:
 - 1-month (default)
 - 1-year
 - indefinitely
+----
 
+Which is rendered as:
 
-Multi-line list items should be separated by a blank line.
+- 5-days
+- 15-days
+
+* line 1
+* line 2
+
+- 1-month (default)
+- 1-year
+- indefinitely
 
 ==== Ordered
 
