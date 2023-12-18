@@ -909,19 +909,19 @@ The following guidelines should be applied when using ordered lists:
 - Limit the number of steps to about seven items. If you find that more than seven steps are needed, consider restructuring the task description.
 - Nested ordered lists are discouraged. As much as possible, do not use sub-steps, commonly written as steps a., b., c., etc. Instead, restructure the task description such that each series of sub-steps is a separate paragraph with an introductory sentence. A method that usually gives satisfactory results is to decompose the steps into major categories and title the category with:
 
-    == Step x - This task
+  == Step x - This task
 
-    [.procedure]
-    . Do the first step.
+  [.procedure]
+  . Do the first step.
 
-    . Do the second step.
+  . Do the second step.
 
-    == Step y ; Another task
+  == Step y ; Another task
 
-    [.procedure]
-    . Do the first step.
+  [.procedure]
+  . Do the first step.
 
-    . Do the second step.
+  . Do the second step.
 
 ## Numbers
 
