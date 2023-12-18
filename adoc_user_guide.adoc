@@ -125,13 +125,15 @@ See https://learn.microsoft.com/en-us/style-guide/scannable-content/headings[Mic
 
 Use the `include::` directive to include text from another file.
 
-----
+====
 include::partial$table-shell-common-options-2.adoc[]
-----
+====
 
 This is typically used to share reusable content.
 
-Included files within a section are located in the /module/<section>/partials directory. Globally included files are located in the /modules/&#95;includes/partials directory.
+Included files within a section are located in the /module/<section>/partials directory.
+
+Globally included files are located in the /modules/&#95;includes/partials directory.
 
 === Line length
 
@@ -530,7 +532,7 @@ Database::
 Which is rendered as:
 
 ----
-__Database__
+Database
 
     A database can have Collections, Documents, User-defined functions, security elements such as Keys, Tokens, Credentials, Access Providers, and child databases.
 ----
