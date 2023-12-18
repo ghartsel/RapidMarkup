@@ -473,8 +473,8 @@ Which is rendered as:
 - 5-days
 - 15-days
 
-  - line 1
-  - line 2
+    - line 1
+    - line 2
 
 - 1-month (default)
 - 1-year
