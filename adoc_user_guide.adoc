@@ -450,7 +450,7 @@ See the at https://pypi.org/project/fauna/[Python Package Index^] (PyPI).
 
 This describes the kinds of lists used in Fauna documentation.
 
-==== Unordered
+==== Unordered list
 
 Unordered lists mostly follow conventional https://docs.asciidoctor.org/asciidoc/latest/lists/unordered/[AsciiDoc list notation], preferring prefacing each list item with a dash (`-`).
 
@@ -494,7 +494,7 @@ Which is rendered as:
 > - 1-month (default)
 > - 1-year
 
-==== Ordered
+==== Ordered list
 
 Use the `[.procedure]` macro to define an ordered list and number each step using a dot (`.`).
 
@@ -518,7 +518,21 @@ Which is rendered as the following with numberic icons:
 Ordered list should not have nested steps. See xref:./style_guide.md#ordered-lists[Ordered lists].
 
 
-==== Definition
+==== Definition list
+
+----
+Database::
+  A database can have Collections, Documents, User-defined functions, security
+  elements such as Keys, Tokens, Credentials, Access Providers, and child
+  databases.
+----
+
+Which is rendered as:
+
+> Database::
+>   A database can have Collections, Documents, User-defined functions, security
+>   elements such as Keys, Tokens, Credentials, Access Providers, and child
+>   databases.
 
 === Tables
 
